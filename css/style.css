@@ -1,0 +1,44 @@
+body {
+  font-family: "Kanit";
+  background-color: #090610;
+  height: 100vh; }
+
+header {
+  background-color: #120c1f !important; }
+  header .navbar .container-fluid .navbar-brand img {
+    width: 9%; }
+  header .navbar .container-fluid a {
+    color: #FFFFFF; }
+  header .navbar .container-fluid a:hover {
+    color: #9063f8; }
+  header .navbar .container-fluid .navbar-toggler {
+    border: none !important;
+    color: #FFFFFF; }
+  header .navbar .container-fluid .navbar-collapse .dropdown-menu {
+    background-color: #120c1f; }
+    header .navbar .container-fluid .navbar-collapse .dropdown-menu .dropdown-item:hover {
+      background-color: #090610; }
+
+footer {
+  padding: 8% 0 3% 0; }
+  footer .logos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 3% 0%; }
+  footer .logos i {
+    font-size: 1.8em;
+    color: #B1B1B1; }
+  footer i:hover {
+    color: #9063f8; }
+  footer .copyright {
+    color: #FFFFFF;
+    text-align: center;
+    opacity: 0.4;
+    font-size: 14px; }
+  footer .copyright span {
+    color: #9063f8;
+    font-weight: 500;
+    opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */

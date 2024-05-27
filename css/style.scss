@@ -1,0 +1,91 @@
+$roxoEscuro:  #090610;
+$roxo: #120c1f;
+$branco: #FFFFFF;
+$roxoClaro: #9063f8;
+$cinzaClaro: #B1B1B1;
+$preto: #000;
+$font: 'Kanit';
+
+
+body {
+    font-family: $font;
+    background-color: $roxoEscuro;
+    height: 100vh;
+}
+
+header {
+    background-color: $roxo !important;
+    
+    .navbar {
+        
+        .container-fluid {
+
+            .navbar-brand {
+
+                img {
+                    width: 9%;
+                }
+            }
+
+            a {
+                color: $branco;
+            }
+
+            a:hover {
+               color: $roxoClaro;
+            }
+
+            .navbar-toggler {
+                border: none !important;
+                color: $branco;
+            }
+
+            .navbar-collapse {
+
+                .dropdown-menu {
+                    background-color: $roxo;
+
+                    .dropdown-item:hover {
+                        background-color: $roxoEscuro;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+footer {
+    padding: 8% 0 3% 0;
+
+    .logos {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 3% 0%;
+    }
+
+    .logos i {
+        font-size: 1.8em;
+        color: $cinzaClaro;
+    }
+      
+    i:hover {
+        color: $roxoClaro;
+    }
+      
+    .copyright {
+        color: $branco;
+        text-align: center;
+        opacity: 0.4;
+        font-size: 14px;
+    }
+      
+    .copyright span {
+        color: $roxoClaro;
+        font-weight: 500;
+        opacity: 1;
+    }
+     
+}
