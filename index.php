@@ -19,7 +19,7 @@
 <header>
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
-              <a class="navbar-brand shadow-none" href="index.html">
+              <a class="navbar-brand shadow-none" href="index.php">
                 <img src="img/logo.jpeg" alt="World of Games">
               </a>
 
@@ -30,10 +30,10 @@
               <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="index.php">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Quem Somos</a>
+                    <a class="nav-link" href="index.php?pg=quemsomos">Quem Somos</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,7 +46,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
+                    <a class="nav-link" href="index.php?pg=contato">Contato</a>
                   </li>
                 </ul>
               </div>
@@ -54,7 +54,18 @@
           </nav>
     </header>
 
+    <main>
+        <?php 
+            $pg = $_GET["pg"] ?? "home";
+            $pg = "paginas/{$pg}.php";
 
+            if(file_exists($pg)) {
+                include $pg;
+            } else {
+                include "paginas/erro.php";
+            }
+        ?> 
+    </main>
 
     <footer id="contatos">
       <div class="logos">
