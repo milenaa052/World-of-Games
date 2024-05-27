@@ -54,7 +54,7 @@
           </nav>
     </header>
 
-    <main>
+    <main class="container">
         <?php 
             $pg = $_GET["pg"] ?? "home";
             $pg = "paginas/{$pg}.php";
@@ -84,6 +84,10 @@
       </div>
 
       <p class="copyright">© Copyright 2024 - Desenvolvido por <span>Milena Santos de Oliveira</span></p>
-    </footer>  
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

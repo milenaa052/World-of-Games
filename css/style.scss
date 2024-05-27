@@ -54,7 +54,44 @@ header {
     }
 }
 
+main {
 
+    h1 {
+        color: $branco;
+        padding: 5% 0%;
+    }
+
+    .swiper {
+
+        img {
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        .swiper-pagination, .swiper-button-prev, .swiper-button-next {
+            color: $roxoClaro;
+            position: initial;
+        }
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+
+                .jogosHome {
+
+                    .flex {
+
+                        .descricao {
+                            
+
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 footer {
     padding: 8% 0 3% 0;

@@ -19,6 +19,16 @@ header {
     header .navbar .container-fluid .navbar-collapse .dropdown-menu .dropdown-item:hover {
       background-color: #090610; }
 
+main h1 {
+  color: #FFFFFF;
+  padding: 5% 0%; }
+main .swiper img {
+  width: 50%;
+  border-radius: 10px; }
+main .swiper .swiper-pagination, main .swiper .swiper-button-prev, main .swiper .swiper-button-next {
+  color: #9063f8;
+  position: initial; }
+
 footer {
   padding: 8% 0 3% 0; }
   footer .logos {
