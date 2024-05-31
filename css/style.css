@@ -97,6 +97,14 @@ main .glow-on-hover:after {
     background-position: 400% 0; }
   100% {
     background-position: 0 0; } }
+main .desenvolvedores .cards {
+  margin: 5% 0; }
+main .desenvolvedores .card {
+  border: none; }
+  main .desenvolvedores .card .card-body {
+    background-color: #120c1f;
+    color: #FFFFFF; }
+
 footer {
   padding: 8% 0 3% 0; }
   footer .logos {

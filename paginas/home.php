@@ -1,3 +1,8 @@
+<?php
+    $dadosApi = file_get_contents("http://localhost/Projetos/WorldOfGames/api/fotos.php");
+    $dadosApi = json_decode($dadosApi);
+?>
+
 <section class="animate__animated animate__fadeInUp">
     <h1 class="text-center">Jogos em Destaque</h1>
 
@@ -8,7 +13,11 @@
                     <div class="flex">
                         <div class="descricao text-center">
                             <a href="html/jogo1.html">
-                                <img src="img/gta.jpg" alt="">
+                                <?php foreach ($dadosApi as $dados) {
+                                    if ($dados->id == 2) {
+                                        echo "<img src='{$dados->imagem}' alt='{$dados->nome}'>";
+                                    };
+                                } ?>
                             </a>
 
                         </div>
@@ -44,7 +53,7 @@
         <!--<div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>-->
     </div>
-</section>]
+</section>
 
 <section class="infoCards animate__animated animate__fadeInUp">
     <h1 class="text-center">Lançamentos</h1>

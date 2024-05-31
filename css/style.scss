@@ -93,7 +93,6 @@ main {
     }
 
     .infoCards {
-
         margin-top: 5%;
 
         .cards {
@@ -119,7 +118,6 @@ main {
     }
 
     .ultimosCards {
-
         margin-top: 5%;
 
         .cards {
@@ -197,6 +195,21 @@ main {
         0% { background-position: 0 0; }
         50% { background-position: 400% 0; }
         100% { background-position: 0 0; }
+    }
+
+    .desenvolvedores {
+        .cards {
+            margin: 5% 0;
+        }
+
+        .card {
+            border: none;
+
+            .card-body {
+                background-color: $roxo;
+                color: $branco;
+            }
+        }
     }
 }
 
