@@ -10,16 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/wickedcss.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
     <title>World of Games</title>
 </head>
 <body>
 <header>
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
-              <a class="navbar-brand shadow-none" href="index.php">
+              <a class="navbar-brand shadow-none" href="index.php" data-aos="fade-right" 
+              data-aos-duration="800" data-aos-easing="ease-in-sine">
                 <img src="img/logo.jpeg" alt="World of Games">
               </a>
 
@@ -27,7 +28,7 @@
                 <i id="botao" class="fa-solid fa-bars"></i>
               </button>
 
-              <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNav">
+              <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNav" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="index.php">Home</a>
@@ -89,5 +90,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

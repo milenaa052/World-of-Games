@@ -4,9 +4,9 @@
 ?>
 
 <section class="desenvolvedores">
-  <h1 class="text-center">Equipe de Desenvolvedores</h1>
+  <h1 class="text-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">Equipe de Desenvolvedores</h1>
 
-  <div class="d-flex justify-content-center">
+  <div class="d-flex justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
     <div class="card" style="width: 18rem;">
       <?php foreach ($dadosApi as $dados) {
         if ($dados->id == 5) {
@@ -20,7 +20,7 @@
     </div>
   </div>
 
-  <div class="cards d-flex justify-content-center gap-5">
+  <div class="cards d-flex justify-content-center gap-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
     <div class="card" style="width: 18rem;">
       <?php foreach ($dadosApi as $dados) {
         if ($dados->id == 5) {
@@ -58,7 +58,7 @@
     </div>
   </div>
   
-  <div class="cards d-flex justify-content-center gap-5">
+  <div class="cards d-flex justify-content-center gap-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
     <div class="card" style="width: 18rem;">
       <?php foreach ($dadosApi as $dados) {
         if ($dados->id == 5) {
