@@ -57,14 +57,14 @@
     </div>
 </section>
 
-<section class="infoCards">
+<section class="infoCards d-flex flex-column align-items-center">
     <h1 class="text-center">Lançamentos</h1>
 
-    <div class="cards d-flex justify-content-center gap-4">
-        <div class="card mb-3" style="max-width: 540px;" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
+    <div class="cards d-xl-flex justify-content-center gap-5">
+        <div class="card mb-5" style="max-width: 540px;" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="img/subway-surfers.webp" class="img-fluid rounded-start" alt="...">
+                    <img src="img/subway-surfers.webp" class="img-fluid" alt="...">
                 </div>
                 <div class="col-md-8 card-body">
                     <h5 class="card-title">Card title</h5>
@@ -74,10 +74,10 @@
             </div>
         </div>
 
-        <div class="card mb-3" style="max-width: 540px;" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+        <div class="card mb-5" style="max-width: 540px;" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="img/subway-surfers.webp" class="img-fluid rounded-start" alt="...">
+                    <img src="img/subway-surfers.webp" class="img-fluid" alt="...">
                 </div>
                 <div class="col-md-8 card-body">
                     <h5 class="card-title">Card title</h5>
@@ -89,11 +89,11 @@
     </div>
 </section>
 
-<section class="ultimosCards">
+<section class="ultimosCards d-flex flex-column align-items-center">
     <h1 class="text-center">Você também pode gostar de:</h1>
 
-    <div class="cards d-flex justify-content-center gap-5">
-        <div class="card" style="width: 18rem;" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
+    <div class="cards d-xl-flex justify-content-center gap-5">
+        <div class="card mb-5" style="width: 18rem;" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <img src="img/gta.jpg" class="card-img-top" alt="...">
             <div class="card-body d-flex justify-content-between">
             <h5 class="card-title align-content-center">GTA V</h5>
@@ -101,7 +101,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 18rem;" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+        <div class="card mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <img src="img/race-car.jpg" class="card-img-top" alt="...">
             <div class="card-body d-flex justify-content-between">
             <h5 class="card-title align-content-center">Call of Duty</h5>

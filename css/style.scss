@@ -21,9 +21,10 @@ header {
         .container-fluid {
 
             .navbar-brand {
+                width: 10%;
 
                 img {
-                    width: 9%;
+                    width: 100%;
                 }
             }
 
@@ -64,7 +65,7 @@ main {
     .swiper {
 
         img {
-            width: 50%;
+            width: 100%;
             border-radius: 10px;
         }
 
@@ -96,8 +97,11 @@ main {
         margin-top: 5%;
 
         .cards {
+            display: block;
+
             img {
                 width: 100%;
+                border-radius: 3px 3px 0px 0px;
             }
     
             .card {
@@ -107,7 +111,7 @@ main {
             .card-body {
                 background-color: $roxo;
                 color: $branco;
-                border-radius: 0 3px 3px 0;
+                border-radius: 0px 0px 3px 3px;
     
                 .card-title {
                     margin: 0;
@@ -132,6 +136,7 @@ main {
             .card-body {
                 background-color: $roxo;
                 color: $branco;
+                border-radius: 0px 0px 3px 3px;
 
                 .botao1 {
                     padding: 2px;
@@ -245,4 +250,63 @@ footer {
         opacity: 1;
     }
      
+}
+
+@media(min-width: 768px) {
+    main {
+        .swiper {
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .infoCards {
+
+            .cards {
+                
+                .card {
+
+                    img {
+                        border-radius: 3px 0px 0px 3px;
+                    }
+
+                    .card-body {
+                        border-radius: 0px 3px 3px 0px;
+                    }
+                }
+            }
+        }
+
+        .ultimosCards {
+
+            .cards {
+
+                .card {
+
+                    .card-body {
+                        border-radius: 0px 0px 3px 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    header {
+        
+        .navbar {
+            
+            .container-fluid {
+    
+                .navbar-brand {
+    
+                    img {
+                        width: 200%;
+                    }
+                }
+            }
+        }
+    }
 }

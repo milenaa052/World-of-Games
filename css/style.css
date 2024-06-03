@@ -5,8 +5,10 @@ body {
 
 header {
   background-color: #120c1f !important; }
-  header .navbar .container-fluid .navbar-brand img {
-    width: 9%; }
+  header .navbar .container-fluid .navbar-brand {
+    width: 10%; }
+    header .navbar .container-fluid .navbar-brand img {
+      width: 100%; }
   header .navbar .container-fluid a {
     color: #FFFFFF; }
   header .navbar .container-fluid a:hover {
@@ -23,24 +25,27 @@ main h1 {
   color: #FFFFFF;
   padding: 5% 0%; }
 main .swiper img {
-  width: 50%;
+  width: 100%;
   border-radius: 10px; }
 main .swiper .swiper-pagination, main .swiper .swiper-button-prev, main .swiper .swiper-button-next {
   color: #9063f8;
   position: initial; }
 main .infoCards {
   margin-top: 5%; }
-  main .infoCards .cards img {
-    width: 100%; }
-  main .infoCards .cards .card {
-    border: none; }
-  main .infoCards .cards .card-body {
-    background-color: #120c1f;
-    color: #FFFFFF;
-    border-radius: 0 3px 3px 0; }
-    main .infoCards .cards .card-body .card-title {
-      margin: 0;
-      padding-top: 30px; }
+  main .infoCards .cards {
+    display: block; }
+    main .infoCards .cards img {
+      width: 100%;
+      border-radius: 3px 3px 0px 0px; }
+    main .infoCards .cards .card {
+      border: none; }
+    main .infoCards .cards .card-body {
+      background-color: #120c1f;
+      color: #FFFFFF;
+      border-radius: 0px 0px 3px 3px; }
+      main .infoCards .cards .card-body .card-title {
+        margin: 0;
+        padding-top: 30px; }
 main .ultimosCards {
   margin-top: 5%; }
   main .ultimosCards .cards img {
@@ -49,7 +54,8 @@ main .ultimosCards {
     border: none; }
   main .ultimosCards .cards .card-body {
     background-color: #120c1f;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    border-radius: 0px 0px 3px 3px; }
     main .ultimosCards .cards .card-body .botao1 {
       padding: 2px; }
 main .glow-on-hover {
@@ -126,5 +132,18 @@ footer {
     color: #9063f8;
     font-weight: 500;
     opacity: 1; }
+
+@media (min-width: 768px) {
+  main .swiper img {
+    width: 50%; }
+  main .infoCards .cards .card img {
+    border-radius: 3px 0px 0px 3px; }
+  main .infoCards .cards .card .card-body {
+    border-radius: 0px 3px 3px 0px; }
+  main .ultimosCards .cards .card .card-body {
+    border-radius: 0px 0px 3px 3px; } }
+@media (max-width: 425px) {
+  header .navbar .container-fluid .navbar-brand img {
+    width: 200%; } }
 
 /*# sourceMappingURL=style.css.map */
