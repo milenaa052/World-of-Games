@@ -24,7 +24,8 @@
                 <img src="img/logo.jpeg" alt="World of Games">
               </a>
 
-              <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
                 <i id="botao" class="fa-solid fa-bars"></i>
               </button>
 

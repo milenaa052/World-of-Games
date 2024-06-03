@@ -3,11 +3,11 @@
     $dadosApi = json_decode($dadosApi);
 ?>
 
-<section class="desenvolvedores">
+<section class="desenvolvedores d-flex flex-column align-items-center">
   <h1 class="text-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">Equipe de Desenvolvedores</h1>
 
   <div class="d-flex justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-    <div class="card" style="width: 18rem;">
+    <div class="card mb-5" style="width: 18rem;">
       <?php foreach ($dadosApi as $dados) {
         if ($dados->id == 5) {
           echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
@@ -20,8 +20,8 @@
     </div>
   </div>
 
-  <div class="cards d-flex justify-content-center gap-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-    <div class="card" style="width: 18rem;">
+  <div class="cards d-xl-flex justify-content-center gap-5">
+    <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
       <?php foreach ($dadosApi as $dados) {
         if ($dados->id == 5) {
           echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
       <?php foreach ($dadosApi as $dados) {
         if ($dados->id == 5) {
           echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
       <?php foreach ($dadosApi as $dados) {
         if ($dados->id == 5) {
           echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
@@ -58,8 +58,8 @@
     </div>
   </div>
   
-  <div class="cards d-flex justify-content-center gap-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-    <div class="card" style="width: 18rem;">
+  <div class="cards d-xl-flex justify-content-center gap-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
+    <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
       <?php foreach ($dadosApi as $dados) {
         if ($dados->id == 5) {
           echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
@@ -71,7 +71,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
       <?php foreach ($dadosApi as $dados) {
         if ($dados->id == 5) {
           echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
@@ -83,7 +83,7 @@
       </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
+    <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
       <?php foreach ($dadosApi as $dados) {
         if ($dados->id == 5) {
           echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
