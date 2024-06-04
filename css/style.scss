@@ -2,6 +2,8 @@ $roxoEscuro:  #090610;
 $roxo: #120c1f;
 $branco: #FFFFFF;
 $roxoClaro: #9063f8;
+$roxoNeon: #5902ac;
+$claro: #caa8f0;
 $cinzaClaro: #B1B1B1;
 $preto: #000;
 $font: 'Kanit';
@@ -216,6 +218,75 @@ main {
             }
         }
     }
+
+    .contato {
+
+        .selecao {
+
+            .form-select {
+                background-color: $claro;
+                box-shadow: 0px 0px 10px $roxoNeon;
+                border: 2px solid $roxoNeon;
+                padding: 1%;
+            }
+        }
+
+        .card {
+            background: none;
+            color: $branco;
+
+            .campos {
+
+                .form-control {
+                    background-color: $claro;
+                    box-shadow: 0px 0px 10px $roxoNeon;
+                    border: 2px solid $roxoNeon;
+                    padding: 2.5%;
+                }
+            }
+
+            .btn {
+                padding: 2%;
+                border-radius: 5px;
+                color: $branco;
+                text-transform: uppercase;
+                font-size: 1rem;
+                letter-spacing: .25rem;
+                transition: all .3s;
+                position: relative;
+                z-index: 1;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: $roxoNeon;
+                  border-radius: 5px;
+                  z-index: -2;
+                }
+                &:before {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 0%;
+                  height: 100%;
+                  background-color: darken($claro, 20%);
+                  transition: all .3s;
+                  border-radius: 5px;
+                  z-index: -1;
+                }
+                &:hover {
+                  color: #fff;
+                  &:before {
+                    width: 100%;
+                  }
+                }
+              }
+        }
+    }
 }
 
 footer {
@@ -297,6 +368,24 @@ footer {
 
                 .card {
                     margin-bottom: 0px !important;
+                }
+            }
+        }
+
+        .contato {
+
+            .selecao {
+                gap: 2%;
+
+                .form-select {
+                    width: 25% !important;
+                }
+            }
+
+            .card {
+
+                .campos {
+                    width: 50% !important;
                 }
             }
         }
