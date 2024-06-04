@@ -15,13 +15,8 @@
                     <div class="flex">
                         <div class="descricao text-center">
                             <a href="html/jogo1.html">
-                                <?php foreach ($dadosApi as $dados) {
-                                    if ($dados->id == 2) {
-                                        echo "<img src='{$dados->imagem}' alt='{$dados->nome}'>";
-                                    };
-                                } ?>
+                                <img src="./img/galacticAttack.jpg" alt="Galactic Attack">
                             </a>
-
                         </div>
                     </div>
                 </div>
@@ -31,7 +26,11 @@
                     <div class="flex">
                         <div class="descricao text-center">
                             <a href="html/jogo2.html">
-                                <img src="img/race-car.jpg" alt="">
+                                <?php foreach ($dadosApi as $dados) {
+                                    if ($dados->id == 2) {
+                                        echo "<img src='{$dados->imagem}' alt='{$dados->nome}'>";
+                                    };
+                                } ?>
                             </a>
                         </div>
                     </div>
@@ -64,11 +63,11 @@
         <div class="card mb-5" style="max-width: 540px;" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="img/subway-surfers.webp" class="img-fluid" alt="...">
+                    <img src="img/birdy.jpeg" class="img-fluid" alt="...">
                 </div>
                 <div class="col-md-8 card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">Birdy</h5>
+                    <p class="card-text">Junte-se a Birdy, o pássaro azul. Sua missão é voar habilidosamente entre os prédios da cidade, evitando os obstáculos.</p>
                     <a href="#" class="btn glow-on-hover pulse">Jogue Agora</a>
                 </div>
             </div>

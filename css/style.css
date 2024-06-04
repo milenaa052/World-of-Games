@@ -111,16 +111,14 @@ main .desenvolvedores .card {
     background-color: #120c1f;
     color: #FFFFFF; }
 main .contato .selecao .form-select {
-  background-color: #caa8f0;
-  box-shadow: 0px 0px 10px #5902ac;
+  background-color: #d4c3eb;
   border: 2px solid #5902ac;
   padding: 1%; }
 main .contato .card {
   background: none;
   color: #FFFFFF; }
   main .contato .card .campos .form-control {
-    background-color: #caa8f0;
-    box-shadow: 0px 0px 10px #5902ac;
+    background-color: #d4c3eb;
     border: 2px solid #5902ac;
     padding: 2.5%; }
   main .contato .card .btn {
@@ -150,7 +148,7 @@ main .contato .card {
       left: 0;
       width: 0%;
       height: 100%;
-      background-color: #9551e1;
+      background-color: #9d77d2;
       transition: all .3s;
       border-radius: 5px;
       z-index: -1; }

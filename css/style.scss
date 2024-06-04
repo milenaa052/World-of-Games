@@ -3,7 +3,7 @@ $roxo: #120c1f;
 $branco: #FFFFFF;
 $roxoClaro: #9063f8;
 $roxoNeon: #5902ac;
-$claro: #caa8f0;
+$claro: #d4c3eb;
 $cinzaClaro: #B1B1B1;
 $preto: #000;
 $font: 'Kanit';
@@ -225,7 +225,6 @@ main {
 
             .form-select {
                 background-color: $claro;
-                box-shadow: 0px 0px 10px $roxoNeon;
                 border: 2px solid $roxoNeon;
                 padding: 1%;
             }
@@ -239,7 +238,6 @@ main {
 
                 .form-control {
                     background-color: $claro;
-                    box-shadow: 0px 0px 10px $roxoNeon;
                     border: 2px solid $roxoNeon;
                     padding: 2.5%;
                 }
