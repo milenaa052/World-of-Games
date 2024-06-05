@@ -23,7 +23,7 @@
 
         <div class="campos mb-3 col-6 w-100">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control fw-bold" id="email" placeholder="email@gamil.com" required>
+            <input type="email" class="form-control fw-bold" id="email" placeholder="email@gmail.com" required>
         </div>
 
         <div class="campos mb-3 col-6 w-100">

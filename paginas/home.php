@@ -14,7 +14,7 @@
                 <div class="jogosHome">
                     <div class="flex">
                         <div class="descricao text-center">
-                            <a href="html/jogo1.html">
+                            <a href="index.php?pg=jogo1">
                                 <img src="./img/galacticAttack.jpg" alt="Galactic Attack">
                             </a>
                         </div>

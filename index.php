@@ -19,6 +19,12 @@
 <header>
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
+              <div class="perfil" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <a href="index.php?pg=cadastro">
+                  <i class="fa-solid fa-circle-user"></i>
+                </a>
+              </div>
+
               <a class="navbar-brand shadow-none" href="index.php" data-aos="fade-right" 
               data-aos-duration="800" data-aos-easing="ease-in-sine">
                 <img src="img/logo.jpeg" alt="World of Games">

@@ -20,6 +20,12 @@ header {
     background-color: #120c1f; }
     header .navbar .container-fluid .navbar-collapse .dropdown-menu .dropdown-item:hover {
       background-color: #090610; }
+  header .perfil i {
+    font-size: 25px;
+    padding: 8px 0px 0px 0px;
+    color: #9063f8; }
+  header .perfil i:hover {
+    color: #5902ac; }
 
 main h1 {
   color: #FFFFFF;
@@ -156,6 +162,12 @@ main .contato .card {
       color: #fff; }
       main .contato .card .btn:hover:before {
         width: 100%; }
+main .jogos {
+  margin-top: 5%; }
+  main .jogos .cards .card {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none; }
 
 footer {
   padding: 8% 0 3% 0; }
@@ -180,6 +192,14 @@ footer {
     opacity: 1; }
 
 @media (min-width: 768px) {
+  header .perfil {
+    order: 2;
+    display: flex;
+    justify-content: end;
+    height: 30px; }
+    header .perfil i {
+      padding: 5px 10px 0px 15px; }
+
   main .swiper img {
     width: 50%; }
   main .infoCards .cards .card img {

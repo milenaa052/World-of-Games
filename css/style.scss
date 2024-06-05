@@ -55,6 +55,18 @@ header {
             }
         }
     }
+
+    .perfil {
+        i {
+            font-size: 25px;
+            padding: 8px 0px 0px 0px;
+            color: $roxoClaro;
+        }
+
+        i:hover {
+            color: $roxoNeon;
+        }
+    }
 }
 
 main {
@@ -285,6 +297,19 @@ main {
               }
         }
     }
+
+    .jogos {
+        margin-top: 5%;
+
+        .cards {
+
+            .card {
+                background-color: transparent;
+                color: $branco;
+                border: none;
+            }
+        }
+    }
 }
 
 footer {
@@ -322,6 +347,19 @@ footer {
 }
 
 @media(min-width: 768px) {
+    header {
+        .perfil {
+            order: 2;
+            display: flex;
+            justify-content: end;
+            height: 30px;
+
+            i {
+                padding: 5px 10px 0px 15px;
+            }
+        }
+    }
+
     main {
         .swiper {
 
