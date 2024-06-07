@@ -245,6 +245,7 @@ main {
         .card {
             background: none;
             color: $branco;
+            border: none;
 
             .campos {
 
@@ -308,6 +309,64 @@ main {
                 color: $branco;
                 border: none;
             }
+        }
+    }
+
+    .cadastro {
+
+        .card {
+            background: none;
+            color: $branco;
+            border: none;
+
+            .campos {
+
+                .form-control {
+                    background-color: $claro;
+                    border: 2px solid $roxoNeon;
+                    padding: 2.5%;
+                }
+            }
+
+            .btn {
+                padding: 2%;
+                border-radius: 5px;
+                color: $branco;
+                text-transform: uppercase;
+                font-size: 1rem;
+                transition: all .3s;
+                position: relative;
+                z-index: 1;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: $roxoNeon;
+                  border-radius: 5px;
+                  z-index: -2;
+                }
+                &:before {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 0%;
+                  height: 100%;
+                  background-color: darken($claro, 20%);
+                  transition: all .3s;
+                  border-radius: 5px;
+                  z-index: -1;
+                }
+                &:hover {
+                  color: #fff;
+                  &:before {
+                    width: 100%;
+                  }
+                }
+              }
         }
     }
 }
