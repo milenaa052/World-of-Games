@@ -7,10 +7,6 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 100,
     cssMode: true,
     loop: true,
-   /* navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },*/
     pagination: {
         el: ".swiper-pagination",
     },

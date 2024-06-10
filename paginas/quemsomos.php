@@ -8,11 +8,7 @@
 
   <div class="d-flex justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
     <div class="card mb-5" style="width: 18rem;">
-      <?php foreach ($dadosApi as $dados) {
-        if ($dados->id == 5) {
-          echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
-        };
-      } ?>
+      <img src="./img/milena.jpeg" class="card-img-top" alt="Milena">
       <div class="card-body text-center">
         <h5 class="card-title">Milena Santos de Oliveira</h5>
         <p>Desenvolvedora do site World of Games e do jogo Galactic Attack</p>
@@ -22,14 +18,10 @@
 
   <div class="cards d-xl-flex justify-content-center gap-5">
     <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-      <?php foreach ($dadosApi as $dados) {
-        if ($dados->id == 5) {
-          echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
-        };
-      } ?>
+      <img src="./img/paulo.JPG" class="card-img-top" alt="Paulo">
       <div class="card-body text-center">
-        <h5 class="card-title">Não sei o que</h5>
-        <p>não sei o que lá</p>
+        <h5 class="card-title">Paulo</h5>
+        <p>Desenvolvedor do jogo Bird</p>
       </div>
     </div>
 
