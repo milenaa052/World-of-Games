@@ -14,7 +14,7 @@
 
         <div class="col-12 col-md-6 d-flex justify-content-end gap-2 flex-wrap">
             <span class="d-flex align-items-center">Não possui conta? Crie uma conta</span>
-            <button type="submit" class="btn">Criar conta</button>
+            <a href="index.php?pg=cadastro" class="btn">Criar conta</a>
             <button type="submit" class="btn">Entrar</button>
         </div>
     </form>
