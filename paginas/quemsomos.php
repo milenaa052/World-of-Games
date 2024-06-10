@@ -1,91 +1,62 @@
 <?php
-    $dadosApi = file_get_contents("http://localhost/Projetos/WorldOfGames/api/fotos.php");
-    $dadosApi = json_decode($dadosApi);
+    $dadosFotos1Api = file_get_contents("http://localhost/Projetos/WorldOfGames/api/fotos1.php");
+    $dadosFotos1Api = json_decode($dadosFotos1Api);
+
+    $dadosFotos2Api = file_get_contents("http://localhost/Projetos/WorldOfGames/api/fotos2.php");
+    $dadosFotos2Api = json_decode($dadosFotos2Api);
+
+    $dadosFotos3Api = file_get_contents("http://localhost/Projetos/WorldOfGames/api/fotos3.php");
+    $dadosFotos3Api = json_decode($dadosFotos3Api);
 ?>
 
 <section class="desenvolvedores d-flex flex-column align-items-center">
   <h1 class="text-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">Equipe de Desenvolvedores</h1>
 
   <div class="d-flex justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-    <div class="card mb-5" style="width: 18rem;">
-      <img src="./img/milena.jpeg" class="card-img-top" alt="Milena">
-      <div class="card-body text-center">
-        <h5 class="card-title">Milena Santos de Oliveira</h5>
-        <p>Desenvolvedora do site World of Games e do jogo Galactic Attack</p>
-      </div>
-    </div>
+    <?php
+      foreach ($dadosFotos1Api as $dados) {
+        ?>
+          <div class="card mb-5" style="width: 18rem;">
+            <img src="<?=$dados->imagem?>" class="card-img-top" alt="<?=$dados->nome?>">
+            <div class="card-body text-center">
+              <h5 class="card-title"><?=$dados->nome?></h5>
+              <p><?=$dados->texto?></p>
+            </div>
+          </div>
+        <?php
+      }
+    ?>
   </div>
 
   <div class="cards d-xl-flex justify-content-center gap-5">
-    <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-      <img src="./img/paulo.JPG" class="card-img-top" alt="Paulo">
-      <div class="card-body text-center">
-        <h5 class="card-title">Paulo</h5>
-        <p>Desenvolvedor do jogo Bird</p>
-      </div>
-    </div>
-
-    <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-      <?php foreach ($dadosApi as $dados) {
-        if ($dados->id == 5) {
-          echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
-        };
-      } ?>
-      <div class="card-body text-center">
-        <h5 class="card-title">Amo minha namorada</h5>
-        <p>Sou pau mandada da minha mulher</p>
-      </div>
-    </div>
-
-    <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-      <?php foreach ($dadosApi as $dados) {
-        if ($dados->id == 5) {
-          echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
-        };
-      } ?>
-      <div class="card-body text-center">
-        <h5 class="card-title">Que não sei oq</h5>
-        <p>não sei oq lá não sei oq lá</p>
-      </div>
-    </div>
+    <?php
+        foreach ($dadosFotos2Api as $dados) {
+          ?>
+            <div class="card mb-5" style="width: 18rem;">
+              <img src="<?=$dados->imagem?>" class="card-img-top" alt="<?=$dados->nome?>">
+              <div class="card-body text-center">
+                <h5 class="card-title"><?=$dados->nome?></h5>
+                <p><?=$dados->texto?></p>
+              </div>
+            </div>
+          <?php
+        }
+      ?>
   </div>
   
   <div class="cards d-xl-flex justify-content-center gap-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-    <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-      <?php foreach ($dadosApi as $dados) {
-        if ($dados->id == 5) {
-          echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
-        };
-      } ?>
-      <div class="card-body text-center">
-        <h5 class="card-title">Amanda é a minha dona</h5>
-        <p>sou viadona na minha mulher</p>
-      </div>
-    </div>
-
-    <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-      <?php foreach ($dadosApi as $dados) {
-        if ($dados->id == 5) {
-          echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
-        };
-      } ?>
-      <div class="card-body text-center">
-        <h5 class="card-title">não oq lá</h5>
-        <p>que não sei oq lá</p>
-      </div>
-    </div>
-
-    <div class="card mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
-      <?php foreach ($dadosApi as $dados) {
-        if ($dados->id == 5) {
-          echo "<img src='{$dados->imagem}' alt='{$dados->nome}' class='card-img-top'>";
-        };
-      } ?>
-      <div class="card-body text-center">
-        <h5 class="card-title">amo minha mulher</h5>
-        <p>propriedade privada da Amanda</p>
-      </div>
-    </div>
+    <?php
+      foreach ($dadosFotos3Api as $dados) {
+        ?>
+          <div class="card mb-5" style="width: 18rem;">
+            <img src="<?=$dados->imagem?>" class="card-img-top" alt="<?=$dados->nome?>">
+            <div class="card-body text-center">
+              <h5 class="card-title"><?=$dados->nome?></h5>
+              <p><?=$dados->texto?></p>
+            </div>
+          </div>
+        <?php
+      }
+    ?>
   </div>
-  
 </section>

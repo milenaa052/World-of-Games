@@ -1,6 +1,12 @@
 <?php
-    $dadosApi = file_get_contents("http://localhost/Projetos/WorldOfGames/api/fotos.php");
-    $dadosApi = json_decode($dadosApi);
+    $dadosBannerApi = file_get_contents("http://localhost/Projetos/WorldOfGames/api/banner.php");
+    $dadosBannerApi = json_decode($dadosBannerApi);
+
+    $dadosCard1Api = file_get_contents("http://localhost/Projetos/WorldOfGames/api/lancamento.php");
+    $dadosCard1Api = json_decode($dadosCard1Api);
+
+    $dadosCard2Api = file_get_contents("http://localhost/Projetos/WorldOfGames/api/sugestao.php");
+    $dadosCard2Api = json_decode($dadosCard2Api);
 ?>
 
 <section>
@@ -26,7 +32,7 @@
                     <div class="flex">
                         <div class="descricao text-center">
                             <a href="html/jogo2.html">
-                                <?php foreach ($dadosApi as $dados) {
+                                <?php foreach ($dadosBannerApi as $dados) {
                                     if ($dados->id == 2) {
                                         echo "<img src='{$dados->imagem}' alt='{$dados->nome}'>";
                                     };
@@ -57,32 +63,25 @@
 <section class="infoCards d-flex flex-column align-items-center">
     <h1 class="text-center">Lançamentos</h1>
 
-    <div class="cards d-xl-flex justify-content-center gap-5">
-        <div class="card mb-5" style="max-width: 540px;" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="img/birdy.jpeg" class="img-fluid" alt="...">
-                </div>
-                <div class="col-md-8 card-body">
-                    <h5 class="card-title">Birdy</h5>
-                    <p class="card-text">Junte-se a Birdy, o pássaro azul. Sua missão é voar habilidosamente entre os prédios da cidade, evitando os obstáculos.</p>
-                    <a href="#" class="btn glow-on-hover pulse">Jogue Agora</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card mb-5" style="max-width: 540px;" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="img/subway-surfers.webp" class="img-fluid" alt="...">
-                </div>
-                <div class="col-md-8 card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <a href="#" class="btn glow-on-hover pulse">Jogue Agora</a>
-                </div>
-            </div>
-        </div>
+    <div class="cards d-xl-flex justify-content-center gap-5">   
+        <?php
+            foreach ($dadosCard1Api as $dados) {
+                ?>
+                    <div class="card mb-5" style="max-width: 540px;" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="<?=$dados->imagem?>" class="img-fluid" alt="<?=$dados->nome?>">
+                            </div>
+                            <div class="col-md-8 card-body">
+                                <h5 class="card-title"><?=$dados->nome?></h5>
+                                <p class="card-text"><?=$dados->descricao?></p>
+                                <a href="<?=$dados->url?>" class="btn glow-on-hover pulse">Jogue Agora</a>
+                            </div>
+                        </div>
+                    </div>
+                <?php
+            }
+        ?>    
     </div>
 </section>
 
@@ -90,20 +89,18 @@
     <h1 class="text-center">Você também pode gostar de:</h1>
 
     <div class="cards d-xl-flex justify-content-center gap-5">
-        <div class="card mb-5" style="width: 18rem;" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <img src="img/gta.jpg" class="card-img-top" alt="...">
-            <div class="card-body d-flex justify-content-between">
-            <h5 class="card-title align-content-center">GTA V</h5>
-            <a href="#" class="btn glow-on-hover pulse">Jogue Agora</a>
-            </div>
-        </div>
-
-        <div class="card mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <img src="img/race-car.jpg" class="card-img-top" alt="...">
-            <div class="card-body d-flex justify-content-between">
-            <h5 class="card-title align-content-center">Call of Duty</h5>
-            <a href="#" class="btn glow-on-hover pulse">Jogue Agora</a>
-            </div>
-        </div>
+        <?php
+            foreach ($dadosCard2Api as $dados) {
+                ?>
+                    <div class="card mb-5" style="width: 18rem;" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                        <img src="<?=$dados->imagem?>" class="card-img-top" alt="<?=$dados->nome?>">
+                        <div class="card-body d-flex justify-content-between">
+                        <h5 class="card-title align-content-center"><?=$dados->nome?></h5>
+                        <a href="<?=$dados->url?>" class="btn glow-on-hover pulse">Jogue Agora</a>
+                        </div>
+                    </div>
+                <?php
+            }
+        ?>
     </div>
 </section>
