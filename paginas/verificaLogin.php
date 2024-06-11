@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
     if($_POST['submit'] && !empty($_POST['email']) && !empty($_POST['senha'])) {
 
@@ -11,9 +12,13 @@
         $result = $conexao->query($sql);
 
         if(mysqli_num_rows($result) < 1) {
+            unset($_SESSION['email']);
+            unset($_SESSION['senha']);
             header('Location: index.php?pg=login');
         } else {
-            header('Location: index.php');
+            $_SESSION['email'] = $email;
+            $_SESSION['senha'] = $senha;
+            header('Location: index.php?pg=conta');
         }
     } else {
         header('Location: index.php?pg=login');

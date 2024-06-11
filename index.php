@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  $logado = $_SESSION['email'];
+  $acesso = $logado == true ? header('Location: index.php?pg=conta') : header('Location: index.php?pg=login');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,6 +29,7 @@
                 <a href="index.php?pg=conta">
                   <i class="fa-solid fa-circle-user"></i>
                 </a>
+                
               </div>
 
               <a class="navbar-brand shadow-none" href="index.php" data-aos="fade-right" 
