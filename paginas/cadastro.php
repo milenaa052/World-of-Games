@@ -37,8 +37,8 @@
         </div>
 
         <div class="col-12 col-md-6 d-flex justify-content-end gap-2">
-            <span class="d-flex align-items-center">Já possui conta? Faça login</span>
-            <a href="index.php?pg=login" class="btn">Login</a>
+            <span class="d-flex align-items-center">Já possui conta?</span>
+            <a href="index.php?pg=login" class="link d-flex align-items-center">Faça Login</a>
             <button type="submit" name="submit" id="submit" class="btn">Cadastrar</button>
         </div>
     </form>

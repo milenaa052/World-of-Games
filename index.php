@@ -1,7 +1,6 @@
 <?php
   session_start();
-  $logado = $_SESSION['email'];
-  $acesso = $logado == true ? header('Location: index.php?pg=conta') : header('Location: index.php?pg=login');
+  $logado = isset($_SESSION['email']);
 ?>
 
 <!DOCTYPE html>
@@ -22,65 +21,64 @@
     <title>World of Games</title>
 </head>
 <body>
-<header>
-        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-            <div class="container-fluid">
-              <div class="perfil" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                <a href="index.php?pg=conta">
-                  <i class="fa-solid fa-circle-user"></i>
+  <header>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <div class="perfil" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <a href="javascript:void(0);" onclick="<?php echo ($logado ? "window.location.href='index.php?pg=conta';" : "window.location.href='index.php?pg=login';"); ?>">
+              <i class="fa-solid fa-circle-user"></i>
+            </a>
+          </div>
+
+          <a class="navbar-brand shadow-none" href="index.php" data-aos="fade-right" 
+          data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <img src="img/logo.jpeg" alt="World of Games">
+          </a>
+
+          <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <i id="botao" class="fa-solid fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNav" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.php">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.php?pg=quemsomos">Quem Somos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
                 </a>
-                
-              </div>
-
-              <a class="navbar-brand shadow-none" href="index.php" data-aos="fade-right" 
-              data-aos-duration="800" data-aos-easing="ease-in-sine">
-                <img src="img/logo.jpeg" alt="World of Games">
-              </a>
-
-              <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                <i id="botao" class="fa-solid fa-bars"></i>
-              </button>
-
-              <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNav" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.php">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.php?pg=quemsomos">Quem Somos</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Categorias
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Ação</a></li>
-                        <li><a class="dropdown-item" href="#">Terror</a></li>
-                        <li><a class="dropdown-item" href="#">Aventura</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.php?pg=contato">Contato</a>
-                  </li>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Ação</a></li>
+                    <li><a class="dropdown-item" href="#">Terror</a></li>
+                    <li><a class="dropdown-item" href="#">Aventura</a></li>
                 </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.php?pg=contato">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
 
-    <main class="container">
-        <?php 
-            $pg = $_GET["pg"] ?? "home";
-            $pg = "paginas/{$pg}.php";
+  <main class="container">
+      <?php 
+          $pg = $_GET["pg"] ?? "home";
+          $pg = "paginas/{$pg}.php";
 
-            if(file_exists($pg)) {
-                include $pg;
-            } else {
-                include "paginas/erro.php";
-            }
-        ?> 
-    </main>
+          if(file_exists($pg)) {
+              include $pg;
+          } else {
+              include "paginas/erro.php";
+          }
+      ?> 
+  </main>
 
     <footer id="contatos">
       <div class="logos">

@@ -366,7 +366,15 @@ main {
                     width: 100%;
                   }
                 }
-              }
+            }
+
+            .link {
+                color: $roxoClaro;
+
+                &:hover {
+                    color: $roxoNeon;
+                }
+            }
         }
     }
 

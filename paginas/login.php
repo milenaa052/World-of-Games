@@ -13,8 +13,8 @@
         </div>
 
         <div class="col-12 col-md-6 d-flex justify-content-end gap-2 flex-wrap">
-            <span class="d-flex align-items-center">Não possui conta? Crie uma conta</span>
-            <a href="index.php?pg=cadastro" class="btn">Criar conta</a>
+            <span class="d-flex align-items-center">Não possui conta?</span>
+            <a href="index.php?pg=cadastro" class="link d-flex align-items-center">Criar conta</a>
             <button type="submit" name="submit" value="Enviar" class="btn">Entrar</button>
         </div>
     </form>

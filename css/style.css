@@ -1,76 +1,102 @@
 body {
   font-family: "Kanit";
   background-color: #090610;
-  height: 100vh; }
+  height: 100vh;
+}
 
 header {
-  background-color: #120c1f !important; }
-  header .navbar .container-fluid .navbar-brand {
-    width: 10%; }
-    header .navbar .container-fluid .navbar-brand img {
-      width: 100%; }
-  header .navbar .container-fluid a {
-    color: #FFFFFF; }
-  header .navbar .container-fluid a:hover {
-    color: #9063f8; }
-  header .navbar .container-fluid .navbar-toggler {
-    border: none !important;
-    color: #FFFFFF; }
-  header .navbar .container-fluid .navbar-collapse .dropdown-menu {
-    background-color: #120c1f; }
-    header .navbar .container-fluid .navbar-collapse .dropdown-menu .dropdown-item:hover {
-      background-color: #090610; }
-  header .perfil i {
-    font-size: 25px;
-    padding: 8px 0px 0px 0px;
-    color: #9063f8; }
-  header .perfil i:hover {
-    color: #5902ac; }
+  background-color: #120c1f !important;
+}
+header .navbar .container-fluid .navbar-brand {
+  width: 10%;
+}
+header .navbar .container-fluid .navbar-brand img {
+  width: 100%;
+}
+header .navbar .container-fluid a {
+  color: #FFFFFF;
+}
+header .navbar .container-fluid a:hover {
+  color: #9063f8;
+}
+header .navbar .container-fluid .navbar-toggler {
+  border: none !important;
+  color: #FFFFFF;
+}
+header .navbar .container-fluid .navbar-collapse .dropdown-menu {
+  background-color: #120c1f;
+}
+header .navbar .container-fluid .navbar-collapse .dropdown-menu .dropdown-item:hover {
+  background-color: #090610;
+}
+header .perfil i {
+  font-size: 25px;
+  padding: 8px 0px 0px 0px;
+  color: #9063f8;
+}
+header .perfil i:hover {
+  color: #5902ac;
+}
 
 main h1 {
   color: #FFFFFF;
-  padding: 5% 0%; }
+  padding: 5% 0%;
+}
 main .swiper img {
   width: 100%;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 main .swiper .swiper-pagination, main .swiper .swiper-button-prev, main .swiper .swiper-button-next {
   color: #9063f8;
-  position: initial; }
+  position: initial;
+}
 main .infoCards {
-  margin-top: 5%; }
-  main .infoCards .cards {
-    display: block; }
-    main .infoCards .cards img {
-      width: 100%;
-      border-radius: 3px 3px 0px 0px; }
-    main .infoCards .cards .card {
-      border: none; }
-    main .infoCards .cards .card-body {
-      background-color: #120c1f;
-      color: #FFFFFF;
-      border-radius: 0px 0px 3px 3px; }
-      main .infoCards .cards .card-body .card-title {
-        margin: 0;
-        padding-top: 30px; }
+  margin-top: 5%;
+}
+main .infoCards .cards {
+  display: block;
+}
+main .infoCards .cards img {
+  width: 100%;
+  border-radius: 3px 3px 0px 0px;
+}
+main .infoCards .cards .card {
+  border: none;
+}
+main .infoCards .cards .card-body {
+  background-color: #120c1f;
+  color: #FFFFFF;
+  border-radius: 0px 0px 3px 3px;
+}
+main .infoCards .cards .card-body .card-title {
+  margin: 0;
+  padding-top: 30px;
+}
 main .ultimosCards {
-  margin-top: 5%; }
-  main .ultimosCards .cards img {
-    width: 100%; }
-  main .ultimosCards .cards .card {
-    border: none; }
-  main .ultimosCards .cards .card-body {
-    background-color: #120c1f;
-    color: #FFFFFF;
-    border-radius: 0px 0px 3px 3px; }
-    main .ultimosCards .cards .card-body .botao1 {
-      padding: 2px; }
+  margin-top: 5%;
+}
+main .ultimosCards .cards img {
+  width: 100%;
+}
+main .ultimosCards .cards .card {
+  border: none;
+}
+main .ultimosCards .cards .card-body {
+  background-color: #120c1f;
+  color: #FFFFFF;
+  border-radius: 0px 0px 3px 3px;
+}
+main .ultimosCards .cards .card-body .botao1 {
+  padding: 2px;
+}
 main .glow-on-hover {
   color: #FFFFFF;
   cursor: pointer;
   position: relative;
   border-radius: 10px;
   padding: 10px;
-  text-decoration: none; }
+  text-decoration: none;
+}
 main .glow-on-hover:before {
   content: '';
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -85,13 +111,17 @@ main .glow-on-hover:before {
   animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity .3s ease-in-out;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 main .glow-on-hover:active {
-  color: #000; }
+  color: #000;
+}
 main .glow-on-hover:active:after {
-  background: transparent; }
+  background: transparent;
+}
 main .glow-on-hover:hover:before {
-  opacity: 1; }
+  opacity: 1;
+}
 main .glow-on-hover:after {
   z-index: -1;
   content: '';
@@ -101,179 +131,233 @@ main .glow-on-hover:after {
   background: #9063f8;
   left: 0;
   top: 0;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 @keyframes glowing {
   0% {
-    background-position: 0 0; }
+    background-position: 0 0;
+  }
   50% {
-    background-position: 400% 0; }
+    background-position: 400% 0;
+  }
   100% {
-    background-position: 0 0; } }
+    background-position: 0 0;
+  }
+}
 main .desenvolvedores .cards {
-  margin: 5% 0; }
+  margin: 5% 0;
+}
 main .desenvolvedores .card {
-  border: none; }
-  main .desenvolvedores .card .card-body {
-    background-color: #120c1f;
-    color: #FFFFFF; }
+  border: none;
+}
+main .desenvolvedores .card .card-body {
+  background-color: #120c1f;
+  color: #FFFFFF;
+}
 main .contato .selecao .form-select {
   background-color: #d4c3eb;
   border: 2px solid #5902ac;
-  padding: 1%; }
+  padding: 1%;
+}
 main .contato .card {
   background: none;
   color: #FFFFFF;
-  border: none; }
-  main .contato .card .campos .form-control {
-    background-color: #d4c3eb;
-    border: 2px solid #5902ac;
-    padding: 2.5%; }
-  main .contato .card .btn {
-    padding: 2%;
-    border-radius: 5px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .25rem;
-    transition: all .3s;
-    position: relative;
-    z-index: 1; }
-    main .contato .card .btn:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #5902ac;
-      border-radius: 5px;
-      z-index: -2; }
-    main .contato .card .btn:before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      height: 100%;
-      background-color: #9d77d2;
-      transition: all .3s;
-      border-radius: 5px;
-      z-index: -1; }
-    main .contato .card .btn:hover {
-      color: #fff; }
-      main .contato .card .btn:hover:before {
-        width: 100%; }
+  border: none;
+}
+main .contato .card .campos .form-control {
+  background-color: #d4c3eb;
+  border: 2px solid #5902ac;
+  padding: 2.5%;
+}
+main .contato .card .btn {
+  padding: 2%;
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .25rem;
+  transition: all .3s;
+  position: relative;
+  z-index: 1;
+}
+main .contato .card .btn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5902ac;
+  border-radius: 5px;
+  z-index: -2;
+}
+main .contato .card .btn:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #9d77d2;
+  transition: all .3s;
+  border-radius: 5px;
+  z-index: -1;
+}
+main .contato .card .btn:hover {
+  color: #fff;
+}
+main .contato .card .btn:hover:before {
+  width: 100%;
+}
 main .jogos {
-  margin-top: 5%; }
-  main .jogos .cards .card {
-    background-color: transparent;
-    color: #FFFFFF;
-    border: none; }
+  margin-top: 5%;
+}
+main .jogos .cards .card {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: none;
+}
 main .cadastro .card {
   background: none;
   color: #FFFFFF;
-  border: none; }
-  main .cadastro .card .campos .form-control {
-    background-color: #d4c3eb;
-    border: 2px solid #5902ac;
-    padding: 2.5%; }
-  main .cadastro .card .btn {
-    padding: 2%;
-    border-radius: 5px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-size: 1rem;
-    transition: all .3s;
-    position: relative;
-    z-index: 1; }
-    main .cadastro .card .btn:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #5902ac;
-      border-radius: 5px;
-      z-index: -2; }
-    main .cadastro .card .btn:before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      height: 100%;
-      background-color: #9d77d2;
-      transition: all .3s;
-      border-radius: 5px;
-      z-index: -1; }
-    main .cadastro .card .btn:hover {
-      color: #fff; }
-      main .cadastro .card .btn:hover:before {
-        width: 100%; }
+  border: none;
+}
+main .cadastro .card .campos .form-control {
+  background-color: #d4c3eb;
+  border: 2px solid #5902ac;
+  padding: 2.5%;
+}
+main .cadastro .card .btn {
+  padding: 2%;
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all .3s;
+  position: relative;
+  z-index: 1;
+}
+main .cadastro .card .btn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5902ac;
+  border-radius: 5px;
+  z-index: -2;
+}
+main .cadastro .card .btn:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #9d77d2;
+  transition: all .3s;
+  border-radius: 5px;
+  z-index: -1;
+}
+main .cadastro .card .btn:hover {
+  color: #fff;
+}
+main .cadastro .card .btn:hover:before {
+  width: 100%;
+}
+main .cadastro .card .link {
+  color: #9063f8;
+}
+main .cadastro .card .link:hover {
+  color: #5902ac;
+}
 main .conta {
-  margin-top: 5%; }
-  main .conta .perfil .image-upload {
-    width: 200px;
-    height: 200px;
-    border: 4px solid #5902ac;
-    border-radius: 100%; }
-  main .conta .perfil p {
-    font-size: 2em; }
-  main .conta .perfil .campos .form-control {
-    background-color: #d4c3eb;
-    border: 2px solid #5902ac;
-    padding: 2.5%; }
+  margin-top: 5%;
+}
+main .conta .perfil .image-upload {
+  width: 200px;
+  height: 200px;
+  border: 4px solid #5902ac;
+  border-radius: 100%;
+}
+main .conta .perfil p {
+  font-size: 2em;
+}
+main .conta .perfil .campos .form-control {
+  background-color: #d4c3eb;
+  border: 2px solid #5902ac;
+  padding: 2.5%;
+}
 
 footer {
-  padding: 8% 0 3% 0; }
-  footer .logos {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding: 3% 0%; }
-  footer .logos i {
-    font-size: 1.8em;
-    color: #B1B1B1; }
-  footer i:hover {
-    color: #9063f8; }
-  footer .copyright {
-    color: #FFFFFF;
-    text-align: center;
-    opacity: 0.4;
-    font-size: 14px; }
-  footer .copyright span {
-    color: #9063f8;
-    font-weight: 500;
-    opacity: 1; }
+  padding: 8% 0 3% 0;
+}
+footer .logos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 3% 0%;
+}
+footer .logos i {
+  font-size: 1.8em;
+  color: #B1B1B1;
+}
+footer i:hover {
+  color: #9063f8;
+}
+footer .copyright {
+  color: #FFFFFF;
+  text-align: center;
+  opacity: 0.4;
+  font-size: 14px;
+}
+footer .copyright span {
+  color: #9063f8;
+  font-weight: 500;
+  opacity: 1;
+}
 
 @media (min-width: 768px) {
   header .perfil {
     order: 2;
     display: flex;
     justify-content: end;
-    height: 30px; }
-    header .perfil i {
-      padding: 5px 10px 0px 15px; }
+    height: 30px;
+  }
+  header .perfil i {
+    padding: 5px 10px 0px 15px;
+  }
 
   main .swiper img {
-    width: 50%; }
+    width: 50%;
+  }
   main .infoCards .cards .card img {
-    border-radius: 3px 0px 0px 3px; }
+    border-radius: 3px 0px 0px 3px;
+  }
   main .infoCards .cards .card .card-body {
-    border-radius: 0px 3px 3px 0px; }
+    border-radius: 0px 3px 3px 0px;
+  }
   main .ultimosCards .cards .card .card-body {
-    border-radius: 0px 0px 3px 3px; }
+    border-radius: 0px 0px 3px 3px;
+  }
   main .desenvolvedores .cards .card {
-    margin-bottom: 0px !important; }
+    margin-bottom: 0px !important;
+  }
   main .contato .selecao {
-    gap: 2%; }
-    main .contato .selecao .form-select {
-      width: 25% !important; }
+    gap: 2%;
+  }
+  main .contato .selecao .form-select {
+    width: 25% !important;
+  }
   main .contato .card .campos {
-    width: 50% !important; } }
+    width: 50% !important;
+  }
+}
 @media (max-width: 425px) {
   header .navbar .container-fluid .navbar-brand img {
-    width: 200%; } }
+    width: 200%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
