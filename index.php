@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
               <div class="perfil" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-                <a href="index.php?pg=cadastro">
+                <a href="index.php?pg=conta">
                   <i class="fa-solid fa-circle-user"></i>
                 </a>
               </div>

@@ -369,6 +369,33 @@ main {
               }
         }
     }
+
+    .conta {
+        margin-top: 5%;
+
+        .perfil{
+
+            .image-upload {
+                width: 200px;
+                height: 200px;
+                border: 4px solid $roxoNeon;
+                border-radius: 100%;
+            }
+
+            p {
+                font-size: 2em;
+            }
+
+            .campos {
+
+                .form-control {
+                    background-color: $claro;
+                    border: 2px solid $roxoNeon;
+                    padding: 2.5%;
+                }
+            }
+        }
+    }
 }
 
 footer {
