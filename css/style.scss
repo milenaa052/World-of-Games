@@ -6,6 +6,8 @@ $roxoNeon: #5902ac;
 $claro: #d4c3eb;
 $cinzaClaro: #B1B1B1;
 $preto: #000;
+$vermelho: #ff0000;
+$vermelhoClaro: #f52828;
 $font: 'Kanit';
 
 
@@ -375,6 +377,17 @@ main {
                     color: $roxoNeon;
                 }
             }
+
+            .message{
+                margin:10px 0;
+                width: 100%;
+                border-radius: 5px;
+                padding:10px;
+                text-align: center;
+                background-color: $vermelho;
+                color: $branco;
+                font-size: 20px;
+             }
         }
     }
 
@@ -386,8 +399,15 @@ main {
             .image-upload {
                 width: 200px;
                 height: 200px;
-                border: 4px solid $roxoNeon;
+                border: 6px solid $roxoNeon;
                 border-radius: 100%;
+
+                img {
+                    height: 100%;
+                    border-radius: 100%;
+                    object-fit: cover;
+                    margin-bottom: 5px;
+                }
             }
 
             p {
@@ -402,6 +422,67 @@ main {
                     padding: 2.5%;
                 }
             }
+
+            .btn {
+                padding: 2%;
+                border-radius: 5px;
+                color: $branco;
+                text-transform: uppercase;
+                font-size: 1rem;
+                transition: all .3s;
+                position: relative;
+                z-index: 1;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: $roxoNeon;
+                  border-radius: 5px;
+                  z-index: -2;
+                }
+                &:before {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 0%;
+                  height: 100%;
+                  background-color: darken($claro, 20%);
+                  transition: all .3s;
+                  border-radius: 5px;
+                  z-index: -1;
+                }
+                &:hover {
+                  color: #fff;
+                  &:before {
+                    width: 100%;
+                  }
+                }
+            }
+
+            .sair {
+                text-decoration: none;
+
+                i {
+                    color: $vermelhoClaro;
+                    font-size: 2rem;
+    
+                    &:hover {
+                        color: $vermelho;
+                    }
+                }
+    
+                .span {
+                    color: $branco;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                }
+            }
+
+            
         }
     }
 }

@@ -1,9 +1,8 @@
 <?php
-    session_start();
 
-    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)){
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['password']) == true)){
         unset($_SESSION['email']);
-        unset($_SESSION['senha']);
+        unset($_SESSION['password']);
         header('Location: index.php?pg=login');
     }
 ?>
@@ -13,7 +12,7 @@
         <div class="card" style="max-width: 940px;">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <img src="./img/banner galactic attack.jpg" class="img-fluid" alt="Galactic Attack" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <img src="./img/galacticAttack.jpg" class="img-fluid" alt="Galactic Attack" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
                 </div>
                 <div class="col-sm-12 col-md-6 card-body d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
                     <h5 class="card-title">Galactic Attack</h5>

@@ -1,23 +1,23 @@
 <?php
     session_start();
 
-    if($_POST['submit'] && !empty($_POST['email']) && !empty($_POST['senha'])) {
+    if($_POST['submit'] && !empty($_POST['email']) && !empty($_POST['password'])) {
 
         include_once('config.php');
         $email = $_POST['email'];
-        $senha = $_POST['senha'];
+        $pass = $_POST['password'];
 
-        $sql = "SELECT * FROM usuarios WHERE email = '$email' and senha = '$senha'";
+        $sql = "SELECT * FROM user_form WHERE email = '$email' and password = '$pass'";
 
-        $result = $conexao->query($sql);
+        $result = $conn->query($sql);
 
         if(mysqli_num_rows($result) < 1) {
             unset($_SESSION['email']);
-            unset($_SESSION['senha']);
+            unset($_SESSION['password']);
             header('Location: index.php?pg=login');
         } else {
             $_SESSION['email'] = $email;
-            $_SESSION['senha'] = $senha;
+            $_SESSION['password'] = $pass;
             header('Location: index.php?pg=conta');
         }
     } else {
