@@ -1,30 +1,28 @@
 <?php
-
     include 'config.php';
 
     if(isset($_POST['submit'])){
+        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $pass = mysqli_real_escape_string($conn, $_POST['password']);
 
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $pass = mysqli_real_escape_string($conn, $_POST['password']);
+        $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE email = '$email' AND password = '$pass'") or die('query failed');
 
-    $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE email = '$email' AND password = '$pass'") or die('query failed');
-
-    if(mysqli_num_rows($select) > 0){
-        $row = mysqli_fetch_assoc($select);
-        $_SESSION['user_id'] = $row['id'];
-        header('location: index.php?pg=conta');
-    }else{
-        $message[] = 'incorrect email or password!';
+        if(mysqli_num_rows($select) > 0){
+            $row = mysqli_fetch_assoc($select);
+            $_SESSION['user_id'] = $row['id'];
+            $_SESSION['email'] = $email;
+            header('location: index.php?pg=conta');
+            exit;
+        }else{
+            $message[] = 'incorrect email or password!';
+        }
     }
-
-    }
-
 ?>
 
 <section class="cadastro">
     <h1 class="text-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">Login</h1>
 
-    <form action="index.php?pg=verificaLogin" method="POST" enctype="multipart/form-data" class="card d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
+    <form action="" method="POST" enctype="multipart/form-data" class="card d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
         <div class="campos mb-3 col-12 col-sm-6">
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control fw-bold" id="email" name="email" placeholder="email@gmail.com" required>
