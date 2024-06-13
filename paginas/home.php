@@ -21,7 +21,7 @@
                     <div class="flex">
                         <div class="descricao text-center">
                             <a href="index.php?pg=jogo1">
-                                <img src="./img/bannerGalacticAttack.jpg" alt="Galactic Attack">
+                                <img src="./img/banner-galactic-attack.jpg" alt="Galactic Attack">
                             </a>
                         </div>
                     </div>
@@ -31,12 +31,8 @@
                 <div class="jogosHome">
                     <div class="flex">
                         <div class="descricao text-center">
-                            <a href="html/jogo2.html">
-                                <?php foreach ($dadosBannerApi as $dados) {
-                                    if ($dados->id == 2) {
-                                        echo "<img src='{$dados->imagem}' alt='{$dados->nome}'>";
-                                    };
-                                } ?>
+                            <a href="index.php?pg=jogo2">
+                                <img src="./img/banner-wild-west-the-infinite-battle.jpeg" alt="Galactic Attack">
                             </a>
                         </div>
                     </div>

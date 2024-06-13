@@ -6,13 +6,6 @@
     if(!isset($user_id)){
         header('location: index.php?pg=login');
     };
-
-    if(isset($_GET['logout'])){
-        unset($user_id);
-        session_destroy();
-        header('location: index.php?pg=login');
-    }
-
 ?>
 
 <section class="conta">
@@ -52,7 +45,7 @@
                 <input type="password" class="form-control fw-bold" id="senha" name="senha" placeholder="Digite o seu nome" required>
             </div>
             <div class="col-12 col-md-6 d-flex justify-content-end gap-4 flex-wrap">
-                <a href="index.php?logout=<?php echo $user_id; ?>" class="sair d-flex flex-row align-items-center justify-content-center gap-2">
+                <a href="index.php?logout=true" class="sair d-flex flex-row align-items-center justify-content-center gap-2">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     <span class="span d-flex align-items-center">Sair</span>
                 </a>

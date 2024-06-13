@@ -4,13 +4,13 @@
 
     $card2[1] = array(
         "id" => 1,
-        "nome" => "GTA",
-        "imagem" => "http://localhost/Projetos/WorldOfGames/img/gta.jpg",
+        "nome" => "Souls in the dark",
+        "imagem" => "http://localhost/Projetos/WorldOfGames/img/banner-souls-in-the-dark.jpeg",
         "url" => "index.php?pg=jogo6",
     );
     $card2[2] = array(
         "id" => 2,
-        "nome" => "Race Car",
+        "nome" => "Submarine Adventure",
         "imagem" => "http://localhost/Projetos/WorldOfGames/img/race-car.jpg",
         "url"=> "index.php?pg=jogo7",
     );

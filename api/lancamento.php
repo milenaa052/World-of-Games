@@ -5,7 +5,7 @@
     $card1[1] = array(
         "id" => 1,
         "nome" => "Bird",
-        "imagem" => "http://localhost/Projetos/WorldOfGames/img/birdy.jpeg",
+        "imagem" => "http://localhost/Projetos/WorldOfGames/img/banner-birdy.jpeg",
         "url" => "index.php?pg=jogo4",
         "descricao"=> "Junte-se a Birdy, o pássaro azul. Sua missão é voar habilidosamente entre os prédios da cidade, evitando os obstáculos.",
     );
