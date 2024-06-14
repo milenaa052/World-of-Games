@@ -1,10 +1,9 @@
-<?php /*
+<?php
 
-    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['password']) == true)){
-        unset($_SESSION['email']);
-        unset($_SESSION['password']);
-        header('Location: index.php?pg=login');
-    }*/
+    if(!isset($_SESSION['user_id'])){
+        header('location: index.php?pg=login');
+        exit;
+    }
 ?>
 
 <section class="jogos">

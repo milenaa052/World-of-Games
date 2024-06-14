@@ -61,7 +61,7 @@ if(isset($_POST['submit'])){
             <input type="password" class="form-control fw-bold" id="senha" name="password" placeholder="Digite a sua senha" required>
         </div>
 
-        <div class="campos mb-3 col-sm-6 col-xl-4">
+        <div class="campos d-none mb-3 col-sm-6 col-xl-4">
             <input type="file" id="image" name="image" accept="image/jpg, image/jpeg, image/png" class="w-100">
         </div>
 
