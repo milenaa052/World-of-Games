@@ -1,11 +1,11 @@
 <?php
-    $dadosBannerApi = file_get_contents("http://localhost/Projetos/WorldOfGames/api/banner.php");
+    $dadosBannerApi = file_get_contents("https://world-of-games-production.up.railway.app/api/banner.php");
     $dadosBannerApi = json_decode($dadosBannerApi);
 
-    $dadosCard1Api = file_get_contents("http://localhost/Projetos/WorldOfGames/api/lancamento.php");
+    $dadosCard1Api = file_get_contents("https://world-of-games-production.up.railway.app/api/lancamento.php");
     $dadosCard1Api = json_decode($dadosCard1Api);
 
-    $dadosCard2Api = file_get_contents("http://localhost/Projetos/WorldOfGames/api/sugestao.php");
+    $dadosCard2Api = file_get_contents("https://world-of-games-production.up.railway.app/api/sugestao.php");
     $dadosCard2Api = json_decode($dadosCard2Api);
 ?>
 

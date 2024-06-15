@@ -1,11 +1,11 @@
 <?php
-    $dadosFotos1Api = file_get_contents("http://localhost/Projetos/WorldOfGames/api/fotos1.php");
+    $dadosFotos1Api = file_get_contents("https://world-of-games-production.up.railway.app/api/fotos1.php");
     $dadosFotos1Api = json_decode($dadosFotos1Api);
 
-    $dadosFotos2Api = file_get_contents("http://localhost/Projetos/WorldOfGames/api/fotos2.php");
+    $dadosFotos2Api = file_get_contents("https://world-of-games-production.up.railway.app/api/fotos2.php");
     $dadosFotos2Api = json_decode($dadosFotos2Api);
 
-    $dadosFotos3Api = file_get_contents("http://localhost/Projetos/WorldOfGames/api/fotos3.php");
+    $dadosFotos3Api = file_get_contents("https://world-of-games-production.up.railway.app/api/fotos3.php");
     $dadosFotos3Api = json_decode($dadosFotos3Api);
 ?>
 

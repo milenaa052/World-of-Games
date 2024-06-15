@@ -5,7 +5,7 @@
     $fotos[1] = array(
         "id" => 1,
         "nome" => "Milena Santos de Oliveira",
-        "imagem" => "http://localhost/Projetos/WorldOfGames/img/milena.jpeg",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/milena.jpeg",
         "texto" => "Desenvolvedora do site World of Games e do jogo Galactic Attack"
     );
 

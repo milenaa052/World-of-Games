@@ -21,7 +21,7 @@
         $new_pass = mysqli_real_escape_string($conn, $_POST['new_pass']);
      
         if(!empty($update_pass) || !empty($new_pass)){
-            if($update_pass != $old_pass){
+            if($update_pass === $old_pass){
                $message[] = 'senha antiga não corresponde!';
             }else{
                mysqli_query($conn, "UPDATE `user_form` SET password = '$new_pass' WHERE id = '$user_id'") or die('query failed');

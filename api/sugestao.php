@@ -5,13 +5,13 @@
     $card2[1] = array(
         "id" => 1,
         "nome" => "Souls in the dark",
-        "imagem" => "http://localhost/Projetos/WorldOfGames/img/banner-souls-in-the-dark.jpeg",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/banner-souls-in-the-dark.jpeg",
         "url" => "index.php?pg=jogo6",
     );
     $card2[2] = array(
         "id" => 2,
         "nome" => "Submarine Adventure",
-        "imagem" => "http://localhost/Projetos/WorldOfGames/img/banner-souls-in-the-dark.jpeg",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/banner-souls-in-the-dark.jpeg",
         "url"=> "index.php?pg=jogo7",
     );
 
