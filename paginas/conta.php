@@ -1,7 +1,7 @@
 <?php
     $logado = isset($_SESSION['email']);
 
-    include './config.php';
+    include 'config.php';
     $user_id = $_SESSION['user_id'];
 
     if(!isset($user_id)){
