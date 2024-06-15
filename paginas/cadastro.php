@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
    $image_tmp_name = $_FILES['image']['tmp_name'];
    $image_folder = './img/uploaded_img/'.$image;
 
-   $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE email = '$email' AND password = '$pass'") or die('query failed');
+   $select = mysqli_query($conn, "SELECT * FROM `userForm` WHERE email = '$email' AND password = '$pass'") or die('query failed');
 
     if(mysqli_num_rows($select) > 0){
       $message[] = 'user already exist'; 
@@ -20,7 +20,7 @@ if(isset($_POST['submit'])){
         if($image_size > 2000000){
          $message[] = 'image size is too large!';
         }else{
-         $insert = mysqli_query($conn, "INSERT INTO `user_form`(name, email, password, image) VALUES('$name', '$email', '$pass', '$image')") or die('query failed');
+         $insert = mysqli_query($conn, "INSERT INTO `userForm`(name, email, password, image) VALUES('$name', '$email', '$pass', '$image')") or die('query failed');
          
         if($insert){
             move_uploaded_file($image_tmp_name, $image_folder);
