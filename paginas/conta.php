@@ -14,17 +14,17 @@
         $update_name = mysqli_real_escape_string($conn, $_POST['update_name']);
         $update_email = mysqli_real_escape_string($conn, $_POST['update_email']);
      
-        mysqli_query($conn, "UPDATE `userForm` SET name = '$update_name', email = '$update_email' WHERE id = '$user_id'") or die('query failed');
+        mysqli_query($conn, "UPDATE `user_form` SET name = '$update_name', email = '$update_email' WHERE id = '$user_id'") or die('query failed');
 
         $old_pass = $_POST['old_pass'];
         $update_pass = mysqli_real_escape_string($conn, $_POST['update_pass']);
         $new_pass = mysqli_real_escape_string($conn, $_POST['new_pass']);
      
         if(!empty($update_pass) || !empty($new_pass)){
-            if($update_pass === $old_pass){
+            if($update_pass != $old_pass){
                $message[] = 'senha antiga não corresponde!';
             }else{
-               mysqli_query($conn, "UPDATE `userForm` SET password = '$new_pass' WHERE id = '$user_id'") or die('query failed');
+               mysqli_query($conn, "UPDATE `user_form` SET password = '$new_pass' WHERE id = '$user_id'") or die('query failed');
                $message[] = 'password updated successfully!';
             }
         }
@@ -38,7 +38,7 @@
            if($update_image_size > 2000000){
               $message[] = 'image is too large';
            }else{
-              $image_update_query = mysqli_query($conn, "UPDATE `userForm` SET image = '$update_image' WHERE id = '$user_id'") or die('query failed');
+              $image_update_query = mysqli_query($conn, "UPDATE `user_form` SET image = '$update_image' WHERE id = '$user_id'") or die('query failed');
               if($image_update_query){
                  move_uploaded_file($update_image_tmp_name, $update_image_folder);
               }
@@ -62,7 +62,7 @@
     
         <div class="image-upload">
                 <?php
-                    $select = mysqli_query($conn, "SELECT * FROM `userForm` WHERE id = '$user_id'") or die('query failed');
+                    $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE id = '$user_id'") or die('query failed');
                     if(mysqli_num_rows($select) > 0){
                         $fetch = mysqli_fetch_assoc($select);
                     }
