@@ -1,8 +1,8 @@
 <?php
 
-    //ini_set('SMTP', 'milenasantosdeoliveira40@gmail.com');
-    //ini_set('smtp_port', '25');
-    //ini_set('sendmail_from', 'hildebranddasilvaamanda@gmail.com');
+  ini_set('SMTP', 'milenasantosdeoliveira40@gmail.com');
+  ini_set('smtp_port', '25');
+  ini_set('sendmail_from', 'hildebranddasilvaamanda@gmail.com');
 
   $nome = $_POST['nome'];
   $email = $_POST['email'];

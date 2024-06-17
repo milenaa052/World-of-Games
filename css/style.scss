@@ -8,6 +8,7 @@ $cinzaClaro: #B1B1B1;
 $preto: #000;
 $vermelho: #ff0000;
 $vermelhoClaro: #f52828;
+$verde: #34ac05;
 $font: 'Kanit';
 
 
@@ -377,17 +378,6 @@ main {
                     color: $roxoNeon;
                 }
             }
-
-            .message{
-                margin:10px 0;
-                width: 100%;
-                border-radius: 5px;
-                padding:10px;
-                text-align: center;
-                background-color: $vermelho;
-                color: $branco;
-                font-size: 20px;
-             }
         }
     }
 
@@ -399,12 +389,13 @@ main {
             .image-upload {
                 width: 200px;
                 height: 200px;
-                border: 6px solid $roxoNeon;
-                border-radius: 100%;
+                border: 5px solid $roxoNeon;
+                border-radius: 50%;
 
                 img {
-                    height: 100%;
-                    border-radius: 100%;
+                    height: 190px;
+                    width: 190px;
+                    border-radius: 50%;
                     object-fit: cover;
                     margin-bottom: 5px;
                 }
@@ -484,6 +475,26 @@ main {
 
             
         }
+    }
+
+    .message{
+        margin:10px 0;
+        border-radius: 5px;
+        padding:10px;
+        text-align: center;
+        background-color: $vermelho;
+        color: $branco;
+        font-size: 20px;
+    }
+
+    .sucessMessage {
+        margin:10px 0;
+        border-radius: 5px;
+        padding:10px;
+        text-align: center;
+        background-color: $verde;
+        color: $branco;
+        font-size: 20px;
     }
 }
 

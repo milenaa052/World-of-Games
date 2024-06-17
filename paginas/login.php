@@ -1,6 +1,6 @@
 <?php
     ob_start();
-    include 'config.php';
+    include 'conn.php';
 
     if(isset($_POST['submit'])){
         $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -15,10 +15,10 @@
             header('location: index.php?pg=conta');
             exit;
         }else{
-            $message[] = 'incorrect email or password!';
+            $message[] = 'Email ou senha incorretos';
         }
     }
-    
+
     ob_end_flush();
 ?>
 
@@ -26,6 +26,14 @@
     <h1 class="text-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">Login</h1>
 
     <form action="" method="POST" enctype="multipart/form-data" class="card d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
+        <?php
+            if(isset($message)){
+                foreach($message as $message){
+                    echo '<div class="message">'.$message.'</div>';
+                }
+            }
+        ?>     
+
         <div class="campos mb-3 col-12 col-sm-6">
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control fw-bold" id="email" name="email" placeholder="email@gmail.com" required>

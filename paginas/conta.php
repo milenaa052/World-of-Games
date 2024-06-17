@@ -1,7 +1,7 @@
 <?php
     $logado = isset($_SESSION['email']);
 
-    include 'config.php';
+    include 'conn.php';
     $user_id = $_SESSION['user_id'];
 
     if(!isset($user_id)){
@@ -16,18 +16,25 @@
      
         mysqli_query($conn, "UPDATE `user_form` SET name = '$update_name', email = '$update_email' WHERE id = '$user_id'") or die('query failed');
 
-        $old_pass = $_POST['old_pass'];
+        $old_pass = mysqli_real_escape_string($conn, $_POST['old_pass']);
         $update_pass = mysqli_real_escape_string($conn, $_POST['update_pass']);
         $new_pass = mysqli_real_escape_string($conn, $_POST['new_pass']);
      
         if(!empty($update_pass) || !empty($new_pass)){
-            if($update_pass != $old_pass){
-               $message[] = 'senha antiga não corresponde!';
-            }else{
-               mysqli_query($conn, "UPDATE `user_form` SET password = '$new_pass' WHERE id = '$user_id'") or die('query failed');
-               $message[] = 'password updated successfully!';
+            if($update_pass === $old_pass){
+                if ($update_pass === $new_pass) {
+                    $message[] = 'A nova senha deve ser diferente da senha atual';
+                } else {
+                    mysqli_query($conn, "UPDATE `user_form` SET password = '$new_pass' WHERE id = '$user_id'") or die('query failed');
+                    $sucessMessage[] = 'Senha atualizada com sucesso!';
+                }
+            }else {
+                $message[] = 'Senha antiga não corresponde!';
             }
         }
+        
+        
+        
      
         $update_image = $_FILES['update_image']['name'];
         $update_image_size = $_FILES['update_image']['size'];
@@ -36,13 +43,13 @@
      
         if(!empty($update_image)){
            if($update_image_size > 2000000){
-              $message[] = 'image is too large';
+              $message[] = 'O tamanho da imagem é muito grande!';
            }else{
               $image_update_query = mysqli_query($conn, "UPDATE `user_form` SET image = '$update_image' WHERE id = '$user_id'") or die('query failed');
               if($image_update_query){
                  move_uploaded_file($update_image_tmp_name, $update_image_folder);
               }
-              $message[] = 'image updated succssfully!';
+              $sucessMessage[] = 'Imagem atualizada com sucesso!';
            }
         }
      
@@ -52,14 +59,6 @@
 <section class="conta">
     <div class="w-100 d-flex flex-column justify-content-center">
         <form action="" method="POST" enctype="multipart/form-data" class="perfil d-flex flex-column justify-content-center align-items-center">
-            <?php
-                if(isset($message)){
-                    foreach($message as $message){
-                        echo '<div class="message">'.$message.'</div>';
-                    }
-                }
-            ?>
-    
         <div class="image-upload">
                 <?php
                     $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE id = '$user_id'") or die('query failed');
@@ -77,8 +76,22 @@
             <div class="campos mb-3 col-sm-6 col-xl-4">
                 <input type="file" id="imagem" name="update_image" accept="image/jpg, image/jpeg, image/png" class="w-100">
             </div>
+
+            <?php
+                if(isset($message)){
+                    foreach($message as $message){
+                        echo '<div class="message">'.$message.'</div>';
+                    }
+                }
+
+                if(isset($sucessMessage)){
+                    foreach($sucessMessage as $sucessMessage){
+                        echo '<div class="sucessMessage">'.$sucessMessage.'</div>';
+                    }
+                }
+            ?>
         
-            <p class="text-white mt-5 col-6">Olá, <?php echo $fetch['name']; ?></p>
+            <p class="text-white mt-5 col-12 col-md-6">Olá, <?php echo $fetch['name']; ?></p>
 
             <div class="campos mb-3 col-12 col-sm-6">
                 <label for="nome" class="form-label">Nome</label>

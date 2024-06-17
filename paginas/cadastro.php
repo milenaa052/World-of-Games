@@ -1,6 +1,6 @@
 <?php
 
-include 'config.php';
+include 'conn.php';
 
 if(isset($_POST['submit'])){
 
@@ -15,19 +15,19 @@ if(isset($_POST['submit'])){
    $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE email = '$email' AND password = '$pass'") or die('query failed');
 
     if(mysqli_num_rows($select) > 0){
-      $message[] = 'user already exist'; 
+      $message[] = 'O usuário já existe'; 
     }else{
         if($image_size > 2000000){
-         $message[] = 'image size is too large!';
+         $message[] = 'O tamanho da imagem é muito grande!';
         }else{
          $insert = mysqli_query($conn, "INSERT INTO `user_form`(name, email, password, image) VALUES('$name', '$email', '$pass', '$image')") or die('query failed');
          
         if($insert){
             move_uploaded_file($image_tmp_name, $image_folder);
-            $message[] = 'registered successfully!';
+            $sucessMessage[] = 'Registrado com sucesso!';
             header('location: index.php?pg=login');
         }else{
-            $message[] = 'registeration failed!';
+            $message[] = 'Registro falhou!';
         }
       }
    }

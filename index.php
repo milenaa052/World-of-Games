@@ -1,11 +1,13 @@
 <?php
+  ob_start();
   session_start();
   $logado = isset($_SESSION['email']);
 
   if(isset($_GET['logout'])){
-      session_destroy();
-      header('location: index.php?pg=login');
+    session_destroy();
+    header('location: index.php?pg=login');
   }
+  ob_end_flush();
 ?>
 
 <!DOCTYPE html>
