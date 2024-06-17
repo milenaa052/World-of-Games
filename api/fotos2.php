@@ -10,9 +10,9 @@
     );
     $fotos[3] = array(
         "id" => 3,
-        "nome" => "Amo minha namorada",
-        "imagem" => "https://world-of-games-production.up.railway.app/img/anita.jpg",
-        "texto" => "Sou pau mandada da minha mulher"
+        "nome" => "Rodrigo",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/Rodrigo.jpeg",
+        "texto" => "Desenvolvedor do jogo Submarine Adventure"
     );
     $fotos[4] = array(
         "id" => 4,

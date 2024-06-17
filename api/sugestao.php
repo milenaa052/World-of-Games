@@ -11,7 +11,7 @@
     $card2[2] = array(
         "id" => 2,
         "nome" => "Submarine Adventure",
-        "imagem" => "https://world-of-games-production.up.railway.app/img/banner-souls-in-the-dark.jpeg",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/banner-submarine-adventure.jpeg",
         "url"=> "index.php?pg=jogo7",
     );
 

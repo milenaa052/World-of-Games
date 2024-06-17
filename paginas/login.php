@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     include 'config.php';
 
     if(isset($_POST['submit'])){
@@ -17,6 +18,8 @@
             $message[] = 'incorrect email or password!';
         }
     }
+    
+    ob_end_flush();
 ?>
 
 <section class="cadastro">
