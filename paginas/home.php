@@ -16,40 +16,21 @@
 
     <div class="swiper" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="jogosHome">
-                    <div class="flex">
-                        <div class="descricao text-center">
-                            <a href="index.php?pg=jogo1">
-                                <img src="./img/banner-galactic-attack.jpg" alt="Galactic Attack">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="jogosHome">
-                    <div class="flex">
-                        <div class="descricao text-center">
-                            <a href="index.php?pg=jogo2">
-                                <img src="./img/banner-wild-west-the-infinite-battle.jpeg" alt="Galactic Attack">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="jogosHome">
-                    <div class="flex">
-                        <div class="descricao text-center">
-                            <a href="html/jogo3.html">
-                                <img src="img/call-of-duty.webp" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php 
+                foreach ($dadosBannerApi as $dados) {
+                    ?>
+                        <div class="swiper-slide">
+                            <div class="flex">
+                                <div class="descricao text-center">
+                                    <a href="<?=$dados->url?>">
+                                        <img src="<?=$dados->imagem?>" alt="<?=$dados->nome?>">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>  
+                    <?php 
+                } 
+            ?> 
         </div>
 
         <div class="swiper-pagination"></div>

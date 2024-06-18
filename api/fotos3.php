@@ -4,9 +4,9 @@
 
     $fotos[5] = array(
         "id" => 5,
-        "nome" => "Amanda é a minha dona",
-        "imagem" => "https://world-of-games-production.up.railway.app/img/anita.jpg",
-        "texto" => "sou viadona na minha mulher"
+        "nome" => "Felipe",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/Felipe.jpeg",
+        "texto" => "Desenvolvedor do jogo Souls In The Dark"
     );
     $fotos[6] = array(
         "id" => 5,

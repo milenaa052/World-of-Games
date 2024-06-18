@@ -5,19 +5,19 @@
     $banner[1] = array(
         "id" => 1,
         "nome" => "Galactic Attack",
-        "imagem" => "https://world-of-games-production.up.railway.app/img/galacticAttack.jpg",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/banner-galactic-attack.jpg",
         "url" => "index.php?pg=jogo1"
     );
     $banner[2] = array(
         "id" => 2,
-        "nome" => "GTA",
-        "imagem" => "https://world-of-games-production.up.railway.app/img/gta.jpg",
+        "nome" => "Wild West The Infinte Battle",
+        "imagem" => "http://world-of-games-production.up.railway.app/img/banner-wild-west-the-infinite-battle.jpeg",
         "url"=> "index.php?pg=jogo2"
     );
     $banner[3] = array(
         "id" => 3,
-        "nome" => "Call of Duty",
-        "imagem" => "https://world-of-games-production.up.railway.app/img/call-of-duty.webp",
+        "nome" => "Snake Hungry",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/Snake.jpeg",
         "url"=> "index.php?pg=jogo3"
     );
 

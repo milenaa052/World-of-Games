@@ -11,7 +11,7 @@
     $fotos[3] = array(
         "id" => 3,
         "nome" => "Rodrigo",
-        "imagem" => "https://world-of-games-production.up.railway.app/img/Rodrigo.jpeg",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/Rodrigo.png",
         "texto" => "Desenvolvedor do jogo Submarine Adventure"
     );
     $fotos[4] = array(
