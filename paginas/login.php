@@ -1,5 +1,4 @@
 <?php
-    ob_start();
     include 'conn.php';
 
     if(isset($_POST['submit'])){
@@ -12,14 +11,14 @@
             $row = mysqli_fetch_assoc($select);
             $_SESSION['user_id'] = $row['id'];
             $_SESSION['email'] = $email;
-            header('location: index.php?pg=conta');
+            echo '<script type="text/javascript">';
+            echo 'window.location.href="index.php?pg=conta";';
+            echo '</script>';
             exit;
         }else{
             $message[] = 'Email ou senha incorretos';
         }
     }
-
-    ob_end_flush();
 ?>
 
 <section class="cadastro">

@@ -4,7 +4,7 @@
 
     $card2[1] = array(
         "id" => 1,
-        "nome" => "Souls in the dark",
+        "nome" => "Wild West The Infinite Battle",
         "imagem" => "https://world-of-games-production.up.railway.app/img/banner-wild-west-the-infinite-battle.jpeg",
         "url" => "index.php?pg=jogo6",
     );

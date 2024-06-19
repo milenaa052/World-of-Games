@@ -5,7 +5,9 @@
     $user_id = $_SESSION['user_id'];
 
     if(!isset($user_id)){
-        header('location: index.php?pg=login');
+        echo '<script type="text/javascript">';
+        echo 'window.location.href="index.php?pg=login";';
+        echo '</script>';
         exit;
     };
 
@@ -32,9 +34,6 @@
                 $message[] = 'Senha antiga não corresponde!';
             }
         }
-        
-        
-        
      
         $update_image = $_FILES['update_image']['name'];
         $update_image_size = $_FILES['update_image']['size'];

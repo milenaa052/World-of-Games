@@ -1,7 +1,9 @@
 <?php
 
     if(!isset($_SESSION['user_id'])){
-        header('location: index.php?pg=login');
+        echo '<script type="text/javascript">';
+        echo 'window.location.href="index.php?pg=login";';
+        echo '</script>';
         exit;
     }
 ?>
@@ -15,7 +17,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6 card-body d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
                     <h5 class="card-title fs-2">Snake Hungry</h5>
-                    <p class="card-text">A terra está sob ameaça por membros de outros planetas devido a um conflito galático, proteja a Terra em sua nave XL7 de ataques e derrote o vilão Etron para que ele não destrua a sua casa.</p>
+                    <p class="card-text">O classio jogo SNAKE, aonde seu principal objetivo é comer maçãs para aumentar seu tamanho e ficar cada vez mais rapido, dando uma dinamica unica, sensacional e muito classica.</p>
                     <a href="./jogos/Snake/index.html" target="_blank" class="col-sm-3 btn glow-on-hover pulse">Jogue Agora</a>
                 </div>
             </div>

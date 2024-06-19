@@ -1,7 +1,9 @@
 <?php
 
     if(!isset($_SESSION['user_id'])){
-        header('location: index.php?pg=login');
+        echo '<script type="text/javascript">';
+        echo 'window.location.href="index.php?pg=login";';
+        echo '</script>';
         exit;
     }
 ?>

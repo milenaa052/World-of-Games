@@ -25,7 +25,9 @@ if(isset($_POST['submit'])){
         if($insert){
             move_uploaded_file($image_tmp_name, $image_folder);
             $sucessMessage[] = 'Registrado com sucesso!';
-            header('location: index.php?pg=login');
+            echo '<script type="text/javascript">';
+            echo 'window.location.href="index.php?pg=login";';
+            echo '</script>';
         }else{
             $message[] = 'Registro falhou!';
         }

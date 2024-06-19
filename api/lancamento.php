@@ -11,10 +11,10 @@
     );
     $card1[2] = array(
         "id" => 2,
-        "nome" => "Subway Surfers",
-        "imagem" => "https://world-of-games-production.up.railway.app/img/banner-birdy.jpeg",
+        "nome" => "Arte da Ocultação",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/banner-arte-da-ocultacao.jpeg",
         "url"=> "index.php?pg=jogo5",
-        "descricao"=> "Junte-se a Birdy, o pássaro azul. Sua missão é voar habilidosamente entre os prédios da cidade, evitando os obstáculos.",
+        "descricao"=> "Você é um habilidoso shinobi, lutando contra hordas de esqueletos. Acumule pontos derrotando inimigos cada vez mais desafiadores.",
     );
 
     echo json_encode($card1);
