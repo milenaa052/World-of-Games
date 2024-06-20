@@ -44,7 +44,7 @@
         <?php
             foreach ($dadosCard1Api as $dados) {
                 ?>
-                    <div class="card mb-5" style="max-width: 540px;" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="card mb-5" style="max-width: 549px;" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="<?=$dados->imagem?>" class="img-fluid" alt="<?=$dados->nome?>">

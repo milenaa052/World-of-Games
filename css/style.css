@@ -59,6 +59,7 @@ main .infoCards .cards {
 main .infoCards .cards img {
   width: 100%;
   border-radius: 3px 3px 0px 0px;
+  height: 100%;
 }
 main .infoCards .cards .card {
   border: none;

@@ -10,8 +10,8 @@
     );
     $banner[2] = array(
         "id" => 2,
-        "nome" => "Wild West The Infinte Battle",
-        "imagem" => "http://world-of-games-production.up.railway.app/img/banner-wild-west-the-infinite-battle.jpeg",
+        "nome" => "Meawtopia",
+        "imagem" => "http://world-of-games-production.up.railway.app/img/meawtopia.jpeg",
         "url"=> "index.php?pg=jogo2"
     );
     $banner[3] = array(

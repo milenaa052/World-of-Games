@@ -4,21 +4,21 @@
 
     $fotos[2] = array(
         "id" => 2,
-        "nome" => "Paulo",
-        "imagem" => "https://world-of-games-production.up.railway.app/img/paulo.JPG",
-        "texto" => "Desenvolvedor do jogo Bird"
+        "nome" => "João Paulo",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/JoaoPaulo.jpeg",
+        "texto" => "Desenvolvedor do jogo Snake Hungry"
     );
     $fotos[3] = array(
         "id" => 3,
-        "nome" => "Rodrigo",
-        "imagem" => "https://world-of-games-production.up.railway.app/img/Rodrigo.png",
-        "texto" => "Desenvolvedor do jogo Submarine Adventure"
+        "nome" => "Thiago",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/Thiago.jpeg",
+        "texto" => "Desenvolvedor do jogo Arte da Ocultação"
     );
     $fotos[4] = array(
         "id" => 4,
-        "nome" => "Que não sei oq",
-        "imagem" => "https://world-of-games-production.up.railway.app/img/anita.jpg",
-        "texto"=> "não sei oq lá não sei oq lá"
+        "nome" => "Alana",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/Alana.jpeg",
+        "texto"=> "Desenvolvedora do jogo Meowtopia"
     );
 
     echo json_encode($fotos);
