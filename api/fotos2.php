@@ -17,7 +17,7 @@
     $fotos[4] = array(
         "id" => 4,
         "nome" => "Alana",
-        "imagem" => "https://world-of-games-production.up.railway.app/img/Alana.jpeg",
+        "imagem" => "https://world-of-games-production.up.railway.app/img/AlanaKovalski.jpeg",
         "texto"=> "Desenvolvedora do jogo Meowtopia"
     );
 

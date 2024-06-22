@@ -10,7 +10,7 @@
     );
     $banner[2] = array(
         "id" => 2,
-        "nome" => "Meawtopia",
+        "nome" => "Meowtopia",
         "imagem" => "http://world-of-games-production.up.railway.app/img/meawtopia.jpeg",
         "url"=> "index.php?pg=jogo2"
     );

@@ -6,12 +6,12 @@
 
         <select class="form-select w-75 mb-5 fw-bold" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <option value="1">Milena</option>
-            <option value="2">Não sei oq lá</option>
-            <option value="3">não sei</option>
-            <option value="4">que não sei oq lá</option>
-            <option value="5">sei que lá</option>
-            <option value="6">não sei oq lá não sei oq lá</option>
-            <option value="7">sei que lá</option>
+            <option value="2">João Paulo</option>
+            <option value="3">Thiago</option>
+            <option value="4">Alana</option>
+            <option value="5">Paulo</option>
+            <option value="6">Rodrigo</option>
+            <option value="7">Patrick</option>
         </select>
     </div>
 
