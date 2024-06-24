@@ -44,9 +44,7 @@
               $sucessMessage[] = 'Imagem atualizada com sucesso!';
            }
         }
-    }
 
-    if(!isset($_SESSION['user_id'])){
         echo '<script type="text/javascript">';
         echo 'window.location.href="index.php?pg=conta";';
         echo '</script>';
