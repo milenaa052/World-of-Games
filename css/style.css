@@ -151,6 +151,9 @@ main .desenvolvedores .cards {
 main .desenvolvedores .card {
   border: none;
 }
+main .desenvolvedores .card .card-img-top {
+  height: 100%;
+}
 main .desenvolvedores .card .card-body {
   background-color: #120c1f;
   color: #FFFFFF;
@@ -369,6 +372,16 @@ main .sucessMessage {
   color: #FFFFFF;
   font-size: 20px;
 }
+main .seta i {
+  color: #9063f8;
+  font-size: 25px;
+}
+main .seta i:hover {
+  color: #5902ac;
+}
+main .erro img {
+  width: 100%;
+}
 
 footer {
   padding: 8% 0 3% 0;
@@ -432,6 +445,9 @@ footer .copyright span {
   }
   main .contato .card .campos {
     width: 50% !important;
+  }
+  main .erro img {
+    width: 40%;
   }
 }
 @media (max-width: 425px) {

@@ -501,6 +501,25 @@ main {
         color: $branco;
         font-size: 20px;
     }
+
+    .seta {
+        
+        i {
+            color: $roxoClaro;
+            font-size: 25px;
+
+            &:hover {
+                color: $roxoNeon;
+            }
+        }
+    }
+
+    .erro {
+
+        img {
+            width: 100%;
+        }
+    }
 }
 
 footer {
@@ -614,6 +633,13 @@ footer {
                 .campos {
                     width: 50% !important;
                 }
+            }
+        }
+
+        .erro {
+
+            img {
+                width: 40%;
             }
         }
     }
