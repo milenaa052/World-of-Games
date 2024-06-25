@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
             move_uploaded_file($image_tmp_name, $image_folder);
             $sucessMessage[] = 'Registrado com sucesso!';
             echo '<script type="text/javascript">';
-            echo 'window.location.href="login";';
+            echo 'window.location.href="index.php?pg=login";';
             echo '</script>';
         }else{
             $message[] = 'Registro falhou!';
@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){
 <section class="cadastro">
     <h1 class="text-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">Cadastro</h1>
 
-    <form action="cadastro" method="POST" enctype="multipart/form-data" class="card d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
+    <form action="index.php?pg=cadastro" method="POST" enctype="multipart/form-data" class="card d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
         <?php
             if(isset($message)){
                 foreach($message as $message){
@@ -69,7 +69,7 @@ if(isset($_POST['submit'])){
 
         <div class="col-12 col-md-6 d-flex justify-content-end gap-2">
             <span class="d-flex align-items-center">Já possui conta? Faça login</span>
-            <a href="login" class="link d-flex align-items-center">Faça Login</a>
+            <a href="index.php?pg=login" class="link d-flex align-items-center">Faça Login</a>
             <button type="submit" name="submit" id="submit" class="btn">Cadastrar</button>
         </div>
     </form>
