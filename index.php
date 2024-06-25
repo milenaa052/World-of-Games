@@ -4,7 +4,7 @@
 
   if(isset($_GET['logout'])){
     session_destroy();
-    header('location: index.php?pg=login');
+    header('location: login');
   }
 ?>
 
@@ -30,12 +30,12 @@
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid">
           <div class="perfil" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
-            <a href="javascript:void(0);" onclick="<?php echo ($logado ? "window.location.href='index.php?pg=conta';" : "window.location.href='index.php?pg=login';"); ?>">
+            <a href="javascript:void(0);" onclick="<?php echo ($logado ? "window.location.href='conta';" : "window.location.href='login';"); ?>">
               <i class="fa-solid fa-circle-user"></i>
             </a>
           </div>
 
-          <a class="navbar-brand shadow-none" href="index.php" data-aos="fade-right" 
+          <a class="navbar-brand shadow-none" href="home" data-aos="fade-right" 
           data-aos-duration="800" data-aos-easing="ease-in-sine">
             <img src="img/logo.jpeg" alt="World of Games">
           </a>
@@ -48,13 +48,13 @@
           <div class="collapse navbar-collapse text-center justify-content-end" id="navbarNav" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                <a class="nav-link" aria-current="page" href="home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.php?pg=quemsomos">Quem Somos</a>
+                <a class="nav-link" href="quem-somos">Quem Somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.php?pg=contato">Contato</a>
+                <a class="nav-link" href="contato">Contato</a>
               </li>
             </ul>
           </div>

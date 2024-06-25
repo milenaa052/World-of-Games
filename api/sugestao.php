@@ -6,13 +6,13 @@
         "id" => 1,
         "nome" => "Wild West The Infinite Battle",
         "imagem" => "https://world-of-games-production.up.railway.app/img/banner-wild-west-the-infinite-battle.jpeg",
-        "url" => "index.php?pg=jogo6",
+        "url" => "jogo6",
     );
     $card2[2] = array(
         "id" => 2,
         "nome" => "Submarine Adventure",
         "imagem" => "https://world-of-games-production.up.railway.app/img/banner-submarine-adventure.jpeg",
-        "url"=> "index.php?pg=jogo7",
+        "url"=> "jogo7",
     );
 
     echo json_encode($card2);

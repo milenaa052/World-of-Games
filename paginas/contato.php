@@ -1,7 +1,7 @@
 <section class="contato">
     <h1 class="text-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">Contato</h1>
 
-    <div class="selecao d-flex flex-wrap flex-row justify-content-center">
+    <!-- <div class="selecao d-flex flex-wrap flex-row justify-content-center">
         <p class="text-white fs-5" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">Entre em contato com:</p>
 
         <select class="form-select w-75 mb-5 fw-bold" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
@@ -13,7 +13,7 @@
             <option value="6">Rodrigo</option>
             <option value="7">Patrick</option>
         </select>
-    </div>
+    </div> -->
 
     <form action="https://formsubmit.co/milenasantosdeoliveira40@gmail.com" method="POST" class="card d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
         <div class="campos mb-3 col-6 w-100">

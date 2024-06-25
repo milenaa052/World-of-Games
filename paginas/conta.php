@@ -6,7 +6,7 @@
 
     if(!isset($user_id)){
         echo '<script type="text/javascript">';
-        echo 'window.location.href="index.php?pg=login";';
+        echo 'window.location.href="login";';
         echo '</script>';
         exit;
     };
