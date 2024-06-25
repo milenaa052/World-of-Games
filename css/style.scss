@@ -229,7 +229,7 @@ main {
             border: none;
 
             .card-img-top {
-                height: auto;
+                height: auto !important;
             }
 
             .card-body {
