@@ -15,10 +15,10 @@
         </select>
     </div>
 
-    <form action="index.php?pg=envioEmail" method="POST" class="card d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
+    <form action="https://formsubmit.co/milenasantosdeoliveira40@gmail.com" method="POST" class="card d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine">
         <div class="campos mb-3 col-6 w-100">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control fw-bold" id="nome" name="nome" placeholder="Digite o seu nome" required>
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" class="form-control fw-bold" id="name" name="name" placeholder="Digite o seu nome" required>
         </div>
 
         <div class="campos mb-3 col-6 w-100">
@@ -27,12 +27,16 @@
         </div>
 
         <div class="campos mb-3 col-6 w-100">
-            <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea class="form-control fw-bold" id="mensagem" name="mensagem" rows="3" placeholder="Digite a sua mensagem" required></textarea>
+            <label for="mensage" class="form-label">Mensagem</label>
+            <textarea class="form-control fw-bold" id="mensage" name="mensage" rows="3" placeholder="Digite a sua mensagem" required></textarea>
         </div>
 
         <div class="col-12 col-md-6">
             <button type="submit" class="btn">Enviar</button>
         </div>
+
+        <input type="hidden" name="_subject" value="Novo Contato!">
+        <input type="text" name="_honey" style="display: none;">
+        <input type="hidden" name="_captcha" value="false">
     </form>
 </section>

@@ -19,6 +19,7 @@
                     <h5 class="card-title fs-3">Meowtopia</h5>
                     <p class="card-text">Em Meowtopia, os jogadores assumem o controle de Buggy, enquanto ele se aventura numa missão para encontrar sua amiga desaparecida, Lily. Com gráficos Pixel Art, explore 3 fases desvendando as pistas deixadas para trás, enquanto Buggy mergulha cada vez mais fundo na investigação, com um detetive que parece ter seus próprios segredos.</p>
                     <a href="./jogos/meowtopia/fase1/index.html" target="_blank" class="col-sm-3 btn glow-on-hover pulse">Jogue Agora</a>
+                    <p class="mensagemErro">Infelizmente este jogo não está disponível para dispositivos móveis!</p>
                 </div>
             </div>
         </div>

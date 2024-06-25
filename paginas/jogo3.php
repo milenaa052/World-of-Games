@@ -19,6 +19,7 @@
                     <h5 class="card-title fs-2">Snake Hungry</h5>
                     <p class="card-text">O classio jogo SNAKE, aonde seu principal objetivo é comer maçãs para aumentar seu tamanho e ficar cada vez mais rapido, dando uma dinamica unica, sensacional e muito classica.</p>
                     <a href="./jogos/Snake/index.html" target="_blank" class="col-sm-3 btn glow-on-hover pulse">Jogue Agora</a>
+                    <p class="mensagemErro">Infelizmente este jogo não está disponível para dispositivos móveis!</p>
                 </div>
             </div>
         </div>

@@ -19,6 +19,7 @@
                     <h5 class="card-title fs-2">Bird</h5>
                     <p class="card-text">Junte-se a Birdy em sua jornada épica pelos céus coloridos do entardecer! Neste jogo cativante, você controla Birdy, o pássaro azul escuro, com cliques simples do botão esquerdo do mouse ou a tecla espaço do teclado. Sua missão é voar habilidosamente entre os prédios da cidade, evitando obstáculos que surgem no caminho.</p>
                     <a href="./jogos/birdy/index.html" target="_blank" class="col-sm-3 btn glow-on-hover pulse">Jogue Agora</a>
+                    <p class="mensagemErro">Infelizmente este jogo não está disponível para dispositivos móveis!</p>
                 </div>
             </div>
         </div>

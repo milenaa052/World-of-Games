@@ -19,6 +19,7 @@
                     <h5 class="card-title fs-2">Wild West The Infinite Battle</h5>
                     <p class="card-text">Você deve navegar pelo deserto repleto de perigos. Sua missão é coletar todas as moedas de ouro, enquanto evita os zumbis do velho oeste. Após passar de fase, uma passagem secreta se abre, levando você ao Subterrâneo Secreto, ao encontrar o troféu, você ganha a habilidade de clicar no espaço para lançar bumerangues que podem derrotar o Goblin Guardião para vencer o jogo.</p>
                     <a href="./jogos/Wild West The Infinite Battle/index.html" target="_blank" class="col-sm-3 btn glow-on-hover pulse">Jogue Agora</a>
+                    <p class="mensagemErro">Infelizmente este jogo não está disponível para dispositivos móveis!</p>
                 </div>
             </div>
         </div>

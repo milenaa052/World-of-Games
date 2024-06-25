@@ -18,6 +18,7 @@
                     <h5 class="card-title fs-2">Arte da Ocultação</h5>
                     <p class="card-text">Você é um habilidoso shinobi em um jogo 2D, lutando contra hordas de esqueletos clicando na tecla "X". Acumule pontos derrotando inimigos cada vez mais desafiadores. Alcance a pontuação final para vencer e trazer paz ao mundo assombrado.</p>
                     <a href="./jogos/Arte da Ocultação/index.html" target="_blank" class="col-sm-3 btn glow-on-hover pulse">Jogue Agora</a>
+                    <p class="mensagemErro">Infelizmente este jogo não está disponível para dispositivos móveis!</p>
                 </div>
             </div>
         </div>

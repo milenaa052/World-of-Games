@@ -316,6 +316,20 @@ main {
                 background-color: transparent;
                 color: $branco;
                 border: none;
+
+                .card-body {
+                    .mensagemErro {
+                        display: flex;
+                        background-color: $vermelho;
+                        padding: 1%;
+                        border-radius: 5px;
+                        text-align: center;
+                    }
+
+                    a {
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -642,6 +656,26 @@ footer {
                 width: 40%;
             }
         }
+
+        .jogos {
+
+            .cards {
+    
+                .card {
+    
+                    .card-body {
+                        .mensagemErro {
+                            display: none;
+                        }
+
+                        a {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    
     }
 }
 

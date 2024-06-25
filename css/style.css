@@ -221,6 +221,16 @@ main .jogos .cards .card {
   color: #FFFFFF;
   border: none;
 }
+main .jogos .cards .card .card-body .mensagemErro {
+  display: flex;
+  background-color: #ff0000;
+  padding: 1%;
+  border-radius: 5px;
+  text-align: center;
+}
+main .jogos .cards .card .card-body a {
+  display: none;
+}
 main .cadastro .card {
   background: none;
   color: #FFFFFF;
@@ -448,6 +458,12 @@ footer .copyright span {
   }
   main .erro img {
     width: 40%;
+  }
+  main .jogos .cards .card .card-body .mensagemErro {
+    display: none;
+  }
+  main .jogos .cards .card .card-body a {
+    display: flex;
   }
 }
 @media (max-width: 425px) {
