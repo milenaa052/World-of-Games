@@ -27,15 +27,15 @@
         </div>
 
         <div class="campos mb-3 col-6 w-100">
-            <label for="mensage" class="form-label">Mensagem</label>
-            <textarea class="form-control fw-bold" id="mensage" name="mensage" rows="3" placeholder="Digite a sua mensagem" required></textarea>
+            <label for="message" class="form-label">Mensagem</label>
+            <textarea class="form-control fw-bold" id="message" name="message" rows="3" placeholder="Digite a sua mensagem" required></textarea>
         </div>
 
         <div class="col-12 col-md-6">
             <button type="submit" class="btn">Enviar</button>
         </div>
 
-        <input type="hidden" name="_subject" value="Novo Contato!">
+        <input type="hidden" name="_subject" value="Novo Contato pelo site Wolrd of Games!">
         <input type="text" name="_honey" style="display: none;">
         <input type="hidden" name="_captcha" value="false">
     </form>
