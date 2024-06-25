@@ -152,7 +152,7 @@ main .desenvolvedores .card {
   border: none;
 }
 main .desenvolvedores .card .card-img-top {
-  height: 100%;
+  height: auto !important;
 }
 main .desenvolvedores .card .card-body {
   background-color: #120c1f;
