@@ -39,7 +39,11 @@
         $update_image_size = $_FILES['update_image']['size'];
         $update_image_tmp_name = $_FILES['update_image']['tmp_name'];
         $update_image_folder = 'https://world-of-games-production.up.railway.app/img/uploaded_img/'.$update_image;
-     
+        chmod("./img/uploaded_img", 0755);
+        chown("./img/uploaded_img", "www-data");
+        chmod('./img/uploaded_img/'.$update_image, 0644);
+        chown('./img/uploaded_img/'.$update_image, "www-data");
+
         if(!empty($update_image)){
            if($update_image_size > 2000000){
               $message[] = 'O tamanho da imagem é muito grande!';
