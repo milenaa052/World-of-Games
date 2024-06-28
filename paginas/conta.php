@@ -34,26 +34,53 @@
                 $message[] = 'Senha antiga não corresponde!';
             }
         }
-     
-        $update_image = $_FILES['update_image']['name'];
-        $update_image_size = $_FILES['update_image']['size'];
-        $update_image_tmp_name = $_FILES['update_image']['tmp_name'];
-        $update_image_folder = 'https://world-of-games-production.up.railway.app/img/uploaded_img/'.$update_image;
-        chmod("./img/uploaded_img", 0755);
-        chown("./img/uploaded_img", "www-data");
-        chmod('./img/uploaded_img/'.$update_image, 0644);
-        chown('./img/uploaded_img/'.$update_image, "www-data");
 
-        if(!empty($update_image)){
-           if($update_image_size > 2000000){
-              $message[] = 'O tamanho da imagem é muito grande!';
-           }else{
-              $image_update_query = mysqli_query($conn, "UPDATE `user_form` SET image = '$update_image' WHERE id = '$user_id'") or die('query failed');
-              if($image_update_query){
-                 move_uploaded_file($update_image_tmp_name, $update_image_folder);
-              }
-              $sucessMessage[] = 'Imagem atualizada com sucesso!';
-           }
+        if(isset($_FILES['update_image'])){
+
+            // $update_image = $_FILES['update_image']['name'];
+            // $update_image_size = $_FILES['update_image']['size'];
+            // $update_image_tmp_name = $_FILES['update_image']['tmp_name'];
+            // $update_image_folder = './img/uploaded_img/'.$update_image;
+
+            // if(!empty($update_image)){
+            //     if($update_image_size > 2000000){
+            //         $message[] = 'O tamanho da imagem é muito grande!';
+            //     }else{
+            //         $image_update_query = mysqli_query($conn, "UPDATE `user_form` SET image = '$update_image' WHERE id = '$user_id'") or die('query failed');
+            //         if($image_update_query){
+            //             move_uploaded_file($update_image_tmp_name, $update_image_folder);
+            //         }
+            //         $sucessMessage[] = 'Imagem atualizada com sucesso!';
+            //     }
+            // }
+            $arquivo = $_FILES['update_image'];
+
+            if($arquivo['error']) {
+                $message[] = 'Falha ao enviar a imagem!';
+            }
+
+            if($arquivo['size'] > 2000000) {
+                $message[] = 'O tamanho da imagem é muito grande!';
+            }
+            
+            $pasta = "./imagensPerfil/";
+            $nomeArquivo = $arquivo['name'];
+            $novoNomeArquivo = uniqid();
+            $extensao = strtolower(pathinfo($nomeArquivo, PATHINFO_EXTENSION));
+
+            if($extensao != "jpg" && $extensao != "png" && $extensao != "jpeg") {
+                $message[] = 'Tipo de arquivo não aceito!';
+            }
+
+            $path = $pasta . $novoNomeArquivo . "." . $extensao;
+            $sucesso = move_uploaded_file($arquivo["tmp_name"], $path);
+
+            if($sucesso) {
+                $image_update_query = mysqli_query($conn, "UPDATE `user_form` SET image = '$path' WHERE id = '$user_id'") or die('query failed');
+                $sucessMessage[] = 'Imagem atualizada com sucesso!';
+            } else {
+                $message[] = 'Falha ao enviar a imagem!';
+            }
         }
     }
 ?>
@@ -70,7 +97,7 @@
                     if($fetch['image'] == ''){
                         echo '<img src="./img/user.png">';
                     }else{
-                        echo '<img src="./img/uploaded_img/'.$fetch['image'].'">';
+                        echo '<img src="'.$fetch['image'].'">';
                     }
                 ?>
             </div>
