@@ -36,23 +36,6 @@
         }
 
         if(isset($_FILES['update_image'])){
-
-            // $update_image = $_FILES['update_image']['name'];
-            // $update_image_size = $_FILES['update_image']['size'];
-            // $update_image_tmp_name = $_FILES['update_image']['tmp_name'];
-            // $update_image_folder = './img/uploaded_img/'.$update_image;
-
-            // if(!empty($update_image)){
-            //     if($update_image_size > 2000000){
-            //         $message[] = 'O tamanho da imagem é muito grande!';
-            //     }else{
-            //         $image_update_query = mysqli_query($conn, "UPDATE `user_form` SET image = '$update_image' WHERE id = '$user_id'") or die('query failed');
-            //         if($image_update_query){
-            //             move_uploaded_file($update_image_tmp_name, $update_image_folder);
-            //         }
-            //         $sucessMessage[] = 'Imagem atualizada com sucesso!';
-            //     }
-            // }
             $arquivo = $_FILES['update_image'];
 
             if($arquivo['error']) {
