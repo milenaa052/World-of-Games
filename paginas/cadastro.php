@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
    $image = $_FILES['image']['name'];
    $image_size = $_FILES['image']['size'];
    $image_tmp_name = $_FILES['image']['tmp_name'];
-   $image_folder = './img/uploaded_img/'.$image;
+   $image_folder = './imagensPerfil/'.$image;
 
    $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE email = '$email' AND password = '$pass'") or die('query failed');
 
